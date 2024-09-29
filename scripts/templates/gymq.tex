@@ -1,0 +1,92 @@
+\documentclass[10pt,twocolumn, varwidth=true]{article} 
+\usepackage[a4paper,landscape,top=1cm,bottom=1cm,left=1cm,right=1cm]{geometry}
+\usepackage{helvet}
+\usepackage{graphicx}
+\usepackage[table]{xcolor}
+\usepackage{booktabs}
+\usepackage{multicol}
+\usepackage{rotating}
+\usepackage[T1]{fontenc}
+\usepackage{sansmath}
+\usepackage{siunitx}
+\usepackage{relsize}
+\usepackage{xcolor}
+\usepackage{overpic}
+\sisetup{detect-all}
+\usepackage[none]{hyphenat}
+\usepackage[document]{ragged2e}
+\sansmath
+\renewcommand\familydefault{\sfdefault} 
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{amsfonts}
+\renewcommand{\arraystretch}{1.1}
+\setlist[enumerate]{itemsep=1mm}
+\usepackage[overlay,absolute]{textpos}
+\newcommand\PlaceText[3]{%
+\begin{textblock*}{10in}(#1,#2)  %% change width of box from 10in as you wish
+#3
+\end{textblock*}
+}%
+\textblockorigin{-5mm}{0mm}   %% Default origin top left corner and it can be changed in this line
+\usepackage{amsmath}
+\definecolor{tablegray}{HTML}{d9d9d9}
+\newcommand{\cfbox}[2]{%
+    \colorlet{currentcolor}{.}%
+    {\color{#1}%
+    \fbox{\color{currentcolor}#2}}%
+}
+
+\begin{document}
+
+
+
+\arrayrulecolor{tablegray}
+\newcommand{\mydeg}{\SI{}{\SIUnitSymbolDegree}}
+%{\PlaceText{102.5mm}{208mm}{\scriptsize{\textcolor{gray}{This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.}}}
+{\PlaceText{15mm}{202mm}{{footer}}
+{\PlaceText{149mm}{10mm}{{13)}}
+{\PlaceText{273mm}{201.05mm}{{\cfbox{black}{sessiontext}}}
+\pagestyle{empty}
+
+\rotatebox{90}{title1} \begin{tabular}[b]{| m{0.5cm} | m{9cm} | m{1.6cm} m{1cm} }
+\hline Q & Question & Answer & \multicolumn{1}{l|}{~} \\ \specialrule{1pt}{0pt}{0pt}
+1 & q1 & \large\vphantom{Ap} & \multicolumn{1}{l|}{~} \\ \hline
+2 & q2 & \large\vphantom{Ap} & \multicolumn{1}{l|}{~} \\ \hline
+3 & q3 & \large\vphantom{Ap} & \multicolumn{1}{l|}{~} \\ \hline
+4 & q4 & \large\vphantom{Ap} & \multicolumn{1}{l|}{~} \\ \hline
+5 & q5 & \large\vphantom{Ap} & \multicolumn{1}{l|}{~} \\ \hline
+6 & q6 & \large\vphantom{Ap} & \multicolumn{1}{l|}{~} \\ \hline
+\end{tabular}
+
+\vspace{5mm}
+
+\rotatebox{90}{title2} \begin{tabular}[b]{| m{0.5cm} | m{9cm} | m{1.6cm} m{1cm} }
+\hline Q & Question & Answer & \multicolumn{1}{l|}{~} \\ \specialrule{1pt}{0pt}{0pt}
+7 & q7 & \large\vphantom{Ap} & \multicolumn{1}{l|}{~} \\ \hline
+8 & q8 & \large\vphantom{Ap} & \multicolumn{1}{l|}{~} \\ \hline
+9 & q9 & \large\vphantom{Ap} & \multicolumn{1}{l|}{~} \\ \hline
+10 & q10 & \large\vphantom{Ap} & \multicolumn{1}{l|}{~} \\ \hline
+11 & q11 & \large\vphantom{Ap} & \multicolumn{1}{l}{~} \\ \cline{1-2}
+12 & q12 & \large\vphantom{Ap} & \multicolumn{1}{l}{~} \\ \cline{1-2}
+\end{tabular}
+
+
+
+
+\vspace{1mm}
+
+\begin{minipage}{0.45\linewidth}
+\centering diag1
+\end{minipage}
+\hfill
+\begin{minipage}{0.45\linewidth}
+\centering diag2
+\end{minipage}
+
+\newpage
+
+\vspace{2mm}
+q13 
+
+\end{document}

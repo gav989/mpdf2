@@ -1,0 +1,64 @@
+\documentclass[10pt, varwidth=true]{extarticle} 
+\usepackage[a4paper,landscape,top=1cm,bottom=1cm,left=1cm,right=1cm]{geometry}
+\usepackage{helvet}
+\usepackage{graphicx}
+\usepackage[table]{xcolor}
+\usepackage{tikz}
+\usepackage{booktabs}
+\usepackage{multicol}
+\usepackage{rotating}
+\usepackage[T1]{fontenc}
+\usepackage{sansmath}
+\usepackage{siunitx}
+\usepackage{relsize}
+\usepackage{xcolor}
+\usepackage{overpic}
+\usepackage{anyfontsize}
+\usepackage{array}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\sisetup{detect-all}
+\usepackage[none]{hyphenat}
+\usepackage[document]{ragged2e}
+\sansmath
+\renewcommand\familydefault{\sfdefault} 
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{amsfonts}
+\renewcommand{\arraystretch}{1.1}
+\setlist[enumerate]{itemsep=1mm}
+\usepackage[overlay,absolute]{textpos}
+\newcommand\PlaceText[3]{%
+\begin{textblock*}{10in}(#1,#2)  %% change width of box from 10in as you wish
+#3
+\end{textblock*}
+}%
+\textblockorigin{-5mm}{0mm}   %% Default origin top left corner and it can be changed in this line
+\usepackage{amsmath}
+\definecolor{tablegray}{HTML}{b3b3b3}
+\newcommand{\cfbox}[2]{%
+    \colorlet{currentcolor}{.}%
+    {\color{#1}%
+    \fbox{\color{currentcolor}#2}}%
+}
+
+\begin{document}
+{\PlaceText{102.5mm}{208mm}{\scriptsize{\textcolor{gray}{This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.}}}
+
+
+
+\pagestyle{empty}
+
+
+\raggedleft \huge{Name $\rule[-1.5mm]{7cm}{0.15mm}$} \\[5cm]
+
+\centering
+
+\fontsize{60}{72}\selectfont GCSE Gym \\[1cm]
+
+\fontsize{40}{48}\selectfont tiertext \\[0.5cm]
+
+\fontsize{40}{48}\selectfont sessionnumberrangetext
+
+
+
+\end{document}

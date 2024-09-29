@@ -1,0 +1,12 @@
+[Unit]
+Description="Daily regeneration"
+RefuseManualStart=no
+RefuseManualStop=no
+
+[Timer]
+Persistent=false
+OnCalendar=*-*-* 00:10:00
+Unit=boardpdf.service
+
+[Install]
+WantedBy=default.target

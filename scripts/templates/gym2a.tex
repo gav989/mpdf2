@@ -1,0 +1,162 @@
+\documentclass[10pt,t]{beamer}
+%page dimensions = 12.8 x 9.6
+\usepackage{helvet}
+\usepackage{tikz}
+\usepackage{fancybox}
+\usepackage{sansmath}
+\usepackage[T1]{fontenc}
+\sansmath
+\renewcommand\familydefault{\sfdefault}
+\usefonttheme{professionalfonts}
+\usepackage{colortbl}
+\usepackage{xcolor}
+\usepackage{overpic}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{relsize}
+\usepackage{siunitx}
+\usepackage{multicol}
+\usepackage{array}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\sisetup{detect-all}
+\definecolor{mybg}{HTML}{F1E9D2}
+\definecolor{myfg}{HTML}{0E162D}
+\definecolor{myred}{HTML}{380202}
+\definecolor{myblue}{HTML}{d2dbf1}
+\definecolor{mypink}{HTML}{f1d2f1}
+\definecolor{fade}{HTML}{c8c2b4}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=2pt, minimum size=0.66cm] (char) {#1};}}
+\setbeamersize{text margin left=3pt,text margin right=3pt}
+\setbeamercolor{background canvas}{bg=mybg}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{headline}{}
+\setbeamertemplate{footline}{\centerline{\textcolor{fade}{This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License}}}
+\setbeamercolor*{palette tertiary}{bg=myfg}
+\setbeamercolor*{palette primary}{bg=myfg}
+\setbeamercolor{item}{fg=myfg}
+\setbeamertemplate{itemize items}[circle]
+
+
+\usepackage[overlay,absolute]{textpos}
+\newcommand\PlaceText[3]{%
+\begin{textblock*}{10in}(#1,#2)  %% change width of box from 10in as you wish
+#3
+\end{textblock*}
+}%
+\textblockorigin{-5mm}{0mm}   %% Default origin top left corner and it can be changed in this line
+
+\begin{document}
+\newcommand{\mydeg}{\SI{}{\SIUnitSymbolDegree}}
+\newcommand{\cfbox}[2]{%
+    \colorlet{currentcolor}{.}%
+    {\color{#1}%
+    \fbox{\color{currentcolor}#2}}%
+}
+\color{myfg}
+\arrayrulecolor{myfg}
+\arrayrulewidth=1pt
+{\PlaceText{65mm}{1mm}{{\cfbox{black}{sessiontext2}}}
+\begin{minipage}{0.45\linewidth}
+\centering diag1
+\end{minipage}
+\hfill
+\begin{minipage}{0.45\linewidth}
+\centering diag2
+\end{minipage}
+
+
+\begin{frame}[fragile]
+	\centering
+	\Huge{ANSWERS}
+\end{frame}
+
+\begin{frame}[fragile]
+	sessiontext \hfill \cfbox{myfg}{title1} \\[.3cm]
+	\centering
+
+	\renewcommand{\arraystretch}{1.5}\begin{tabular}{| m{0.4cm} | m{6cm} | m{4.4cm} | }
+	\hline Q & Question & Answer \\ \specialrule{1pt}{0pt}{0pt}
+	1 & q1 & \textcolor{myred}{} \\ \hline
+	2 & q2 & \textcolor{myred}{} \\ \hline
+	3 & q3 & \textcolor{myred}{} \\ \hline
+	4 & q4 & \textcolor{myred}{} \\ \hline
+	5 & q5 & \textcolor{myred}{} \\ \hline
+	\end{tabular}
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+	sessiontext \hfill \cfbox{myfg}{title1 - Answer} \\[.3cm]
+	\centering
+
+	\renewcommand{\arraystretch}{1.5}\begin{tabular}{| m{0.4cm} | m{6cm} | m{4.4cm} | }
+	\hline Q & Question & Answer \\ \specialrule{1pt}{0pt}{0pt}
+	1 & q1 & \textcolor{myred}{a1 } \\ \hline
+	2 & q2 & \textcolor{myred}{a2 } \\ \hline
+	3 & q3 & \textcolor{myred}{a3 } \\ \hline
+	4 & q4 & \textcolor{myred}{a4 } \\ \hline
+	5 & q5 & \textcolor{myred}{a5 } \\ \hline
+	\end{tabular}
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+	sessiontext \hfill \cfbox{myfg}{title2} \\[.3cm]
+	\centering
+	\renewcommand{\arraystretch}{1.5}\begin{tabular}{| m{0.4cm} | m{6cm} | m{4.4cm} | }
+	\hline Q & Question & Answer \\ \specialrule{1pt}{0pt}{0pt}
+	6 & q6 & \textcolor{myred}{} \\ \hline
+	7 & q7 & \textcolor{myred}{} \\ \hline
+	8 & q8 & \textcolor{myred}{} \\ \hline
+	9 & q9 & \textcolor{myred}{} \\ \hline
+	10 & q10 & \textcolor{myred}{} \\ \hline
+	\end{tabular}
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+	sessiontext \hfill \cfbox{myfg}{title2 - Answer} \\[.3cm]
+	\centering
+
+	\renewcommand{\arraystretch}{1.5}\begin{tabular}{| m{0.4cm} | m{6cm} | m{4.4cm} | }
+	\hline Q & Question & Answer \\ \specialrule{1pt}{0pt}{0pt}
+	6 & q6 & \textcolor{myred}{a6 } \\ \hline
+	7 & q7 & \textcolor{myred}{a7 } \\ \hline
+	8 & q8 & \textcolor{myred}{a8 } \\ \hline
+	9 & q9 & \textcolor{myred}{a9 } \\ \hline
+	10 & q10 & \textcolor{myred}{a10 } \\ \hline
+	\end{tabular}
+
+\end{frame}
+
+\begin{frame}[fragile]
+	sessiontext \hfill \cfbox{myfg}{title3} \\[.3cm]
+	\centering
+	q11 
+
+\end{frame}
+
+\begin{frame}[fragile]
+	sessiontext \hfill \cfbox{myfg}{title3 - Answer} \\[.3cm]
+	\centering
+	a11 
+\end{frame}
+
+\begin{frame}[fragile]
+	sessiontext \hfill \cfbox{myfg}{Exam Question} \\[.3cm]
+	\centering
+	q13 
+
+\end{frame}
+
+\begin{frame}[fragile]
+	sessiontext \hfill \cfbox{myfg}{Exam Question - Answer} \\[.3cm]
+	\centering
+	a13 
+\end{frame}
+
+\end{document}

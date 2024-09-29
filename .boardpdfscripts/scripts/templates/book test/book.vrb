@@ -1,0 +1,4 @@
+\color{fore}
+	hint\\[0.5cm]
+	\href{run:./folder/Addition.pdf}{Addition File} \\
+	\textcolor{red}{\href{run:./folder/1000 Multiplication.pdf}{1000 Multiplication File}}

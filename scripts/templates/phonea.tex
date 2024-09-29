@@ -1,0 +1,57 @@
+\documentclass[11pt,varwidth=false]{article}
+\usepackage[paperheight=192mm,paperwidth=108mm,margin=5mm]{geometry}
+\usepackage{anyfontsize}
+
+
+\usepackage{helvet}
+\usepackage{tikz}
+\usepackage{sansmath}
+\usepackage[T1]{fontenc}
+\sansmath
+\renewcommand\familydefault{\sfdefault}
+\usepackage{colortbl}
+\usepackage{xcolor}
+\usepackage{overpic}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{relsize}
+\usepackage{siunitx}
+\sisetup{detect-all}
+
+
+
+\usepackage{helvet}
+\usepackage[T1]{fontenc}
+\usepackage{sansmath}
+\usepackage{siunitx}
+\usepackage{relsize}
+\sisetup{detect-all}
+\usepackage[none]{hyphenat}
+\usepackage[document]{ragged2e}
+\sansmath
+\renewcommand\familydefault{\sfdefault} 
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{amsfonts}
+\setlist[enumerate]{itemsep=1mm}
+\usepackage[overlay,absolute]{textpos}
+\newcommand\PlaceText[3]{%
+\begin{textblock*}{10in}(#1,#2)  %% change width of box from 10in as you wish
+#3
+\end{textblock*}
+}%
+\textblockorigin{-5mm}{0mm}   %% Default origin top left corner and it can be changed in this line
+\usepackage{amsmath}
+
+\begin{document}
+\newcommand{\mydeg}{\SI{}{\SIUnitSymbolDegree}}
+{\PlaceText{15mm}{190mm}{\tiny{This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.}}
+\pagestyle{empty}
+\centering \underline{title}\\
+
+{\fontsize{12}{13}\selectfont qcontent}
+\newpage
+\centering \underline{Answers}\\
+{\fontsize{12}{13}\selectfont acontent}
+
+\end{document}

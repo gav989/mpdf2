@@ -1,0 +1,82 @@
+\documentclass[11pt,landscape,t]{beamer}
+\geometry{paper=a6paper}
+
+% Define Colours
+\definecolor{myfg}{HTML}{0E162D}
+\definecolor{fade}{HTML}{c5c9d3}
+\definecolor{mybg}{HTML}{F1E9D2}
+\definecolor{myred}{HTML}{380202}
+\definecolor{myblue}{HTML}{d2edf1}
+\definecolor{mypink}{HTML}{f1d2f1}
+\definecolor{mygreen}{HTML}{d4f1d2}
+\definecolor{myorange}{HTML}{feebcc}
+\definecolor{myyellow}{HTML}{fcfdc7}
+\definecolor{myviolet}{HTML}{ecd2f1}
+\definecolor{myindigo}{HTML}{ded2f1}
+\definecolor{myred2}{HTML}{f1d2d2}
+
+% This stuff is for the copyright thing
+\usepackage[overlay,absolute]{textpos}
+\usepackage{ccicons}
+\textblockorigin{-5mm}{0mm}   %% Default origin top left corner and it can be changed in this line
+\newcommand\CopyrightNotice[0]{%
+\begin{textblock*}{10in}(151mm,27.5mm){\tiny{\rotatebox{90}{\textcolor{fade}{This work is licensed under CC BY-NC-SA 4.0 \ccbyncsa}}}} \end{textblock*}
+}%
+
+%This stuff is to set beamer template options
+\setbeamersize{text margin left=0.6cm,text margin right=0.6cm}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{headline}{}
+\setbeamercolor*{palette tertiary}{bg=myfg}
+\setbeamercolor*{palette primary}{bg=myfg}
+
+% This stuff is to sort fonts out
+\usepackage{contour}
+\contourlength{0.1em}
+\usepackage[scaled=0.95]{helvet}
+\renewcommand\familydefault{\sfdefault}
+\usefonttheme{professionalfonts}
+\usepackage[T1]{fontenc}
+
+% This stuff is for tcolorboxes - the title and border etc
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+\newtcolorbox{borderbox}[2][]{colback=white,colframe=myfg,fonttitle=\bfseries,coltext=myfg,colbacktitle=myfg,enhanced,attach boxed title to top right={yshift=-4.5mm,xshift=-3mm},title={#2},#1}
+\newtcolorbox{questionbox}[2][]{boxed title style={size=fbox,arc=1.65mm,colback=myfg}, colframe=myfg,fonttitle=\tiny\bfseries,colback=white,coltext=myfg,enhanced,attach boxed title to top left={yshift=-5mm,xshift=-1.6mm},title={#2},#1}
+% Below is how to use these boxes for normal pages (no colour)
+% \begin{questionbox}[left=1mm,right=0mm,top=0mm,bottom=0mm,before skip=0.05cm]{6}{q6 }\end{questionbox}
+
+
+% for specialrule
+\usepackage{booktabs}
+
+
+%possibly necessary
+\usepackage{tikz}
+\usepackage{sansmath}
+\newcommand{\mydeg}{\SI{}{\SIUnitSymbolDegree}}
+\pagestyle{empty}
+\sansmath
+\usepackage{colortbl}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage[none]{hyphenat}
+\usepackage[document]{ragged2e}
+\usepackage{relsize}
+\usepackage{overpic}
+\usepackage{siunitx}
+\sisetup{detect-all}
+\usepackage{array}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+%for return to contents hyperlink
+\usepackage{hyperref}
+
+
+
+\begin{document}
+
+CONTENT
+
+\end{document}

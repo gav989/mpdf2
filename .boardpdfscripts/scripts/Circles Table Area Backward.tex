@@ -1,0 +1,567 @@
+\documentclass[13.5pt, varwidth=true]{beamer} 
+\usepackage[scaled=1]{helvet}
+\usepackage[T1]{fontenc}
+\usepackage{overpic}
+\usepackage{sansmath}
+\usepackage{multicol}
+\sansmath
+\renewcommand\familydefault{\sfdefault}
+%\DeclareMathSizes{11}{19}{13}{9}   % For size 11 text
+\usefonttheme{professionalfonts}
+\usepackage{colortbl}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{fancybox}
+\usepackage{relsize}
+\usepackage{siunitx}
+\sisetup{detect-all}
+\definecolor{que1}{HTML}{FFC5FA}
+\definecolor{que2}{HTML}{C6D7FD}
+\definecolor{bgre}{HTML}{DCDCDC}
+\definecolor{tgre}{HTML}{BCBCBC}
+\definecolor{ared}{HTML}{850000}
+\setbeamercolor{background canvas}{bg=bgre}
+\setbeamercolor{que1}{fg=black,bg=que1}
+\setbeamercolor{que2}{fg=black,bg=que2}
+\usetheme{CambridgeUS}
+\usecolortheme{beetle}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}{\centerline{\textcolor{tgre}{This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License}}}
+\usepackage{graphicx}
+\setbeamercolor*{palette tertiary}{bg=que1}
+\setbeamercolor*{palette primary}{bg=que2}
+\begin{document}
+\date{}
+
+\section[Circles]{what is this bit?}
+\subsection[title]{and this?}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 117cm$^{2}$\\ \hline & & 456cm$^{2}$\\ \hline & & 383cm$^{2}$\\ \hline & & 39cm$^{2}$\\ \hline & &262cm$^{2}$ \\ \hline & & 321cm$^{2}$ \\ \hline & & 148cm$^{2}$ \\ \hline & & 480cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 6.1cm & 12.21cm & 117cm$^{2}$ \\ \hline 12.05cm & 24.1cm & 456cm$^{2}$ \\ \hline 11.04cm & 22.08cm & 383cm$^{2}$ \\ \hline 3.52cm & 7.05cm & 39cm$^{2}$ \\ \hline 9.13cm & 18.26cm & 262cm$^{2}$ \\ \hline 10.11cm & 20.22cm & 321cm$^{2}$ \\ \hline 6.86cm & 13.73cm & 148cm$^{2}$ \\ \hline 12.36cm & 24.72cm & 480cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 212cm$^{2}$\\ \hline & & 273cm$^{2}$\\ \hline & & 323cm$^{2}$\\ \hline & & 274cm$^{2}$\\ \hline & &146cm$^{2}$ \\ \hline & & 101cm$^{2}$ \\ \hline & & 238cm$^{2}$ \\ \hline & & 404cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+ 		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 8.21cm & 16.43cm & 212cm$^{2}$ \\ \hline 9.32cm & 18.64cm & 273cm$^{2}$ \\ \hline 10.14cm & 20.28cm & 323cm$^{2}$ \\ \hline 9.34cm & 18.68cm & 274cm$^{2}$ \\ \hline 6.82cm & 13.63cm & 146cm$^{2}$ \\ \hline 5.67cm & 11.34cm & 101cm$^{2}$ \\ \hline 8.7cm & 17.41cm & 238cm$^{2}$ \\ \hline 11.34cm & 22.68cm & 404cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 407cm$^{2}$\\ \hline & & 17cm$^{2}$\\ \hline & & 334cm$^{2}$\\ \hline & & 75cm$^{2}$\\ \hline & &57cm$^{2}$ \\ \hline & & 156cm$^{2}$ \\ \hline & & 77cm$^{2}$ \\ \hline & & 147cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 11.38cm & 22.76cm & 407cm$^{2}$ \\ \hline 2.33cm & 4.65cm & 17cm$^{2}$ \\ \hline 10.31cm & 20.62cm & 334cm$^{2}$ \\ \hline 4.89cm & 9.77cm & 75cm$^{2}$ \\ \hline 4.26cm & 8.52cm & 57cm$^{2}$ \\ \hline 7.05cm & 14.09cm & 156cm$^{2}$ \\ \hline 4.95cm & 9.9cm & 77cm$^{2}$ \\ \hline 6.84cm & 13.68cm & 147cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 140cm$^{2}$\\ \hline & & 233cm$^{2}$\\ \hline & & 156cm$^{2}$\\ \hline & & 312cm$^{2}$\\ \hline & &215cm$^{2}$ \\ \hline & & 471cm$^{2}$ \\ \hline & & 89cm$^{2}$ \\ \hline & & 193cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 6.68cm & 13.35cm & 140cm$^{2}$ \\ \hline 8.61cm & 17.22cm & 233cm$^{2}$ \\ \hline 7.05cm & 14.09cm & 156cm$^{2}$ \\ \hline 9.97cm & 19.93cm & 312cm$^{2}$ \\ \hline 8.27cm & 16.55cm & 215cm$^{2}$ \\ \hline 12.24cm & 24.49cm & 471cm$^{2}$ \\ \hline 5.32cm & 10.65cm & 89cm$^{2}$ \\ \hline 7.84cm & 15.68cm & 193cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 454cm$^{2}$\\ \hline & & 248cm$^{2}$\\ \hline & & 419cm$^{2}$\\ \hline & & 108cm$^{2}$\\ \hline & &372cm$^{2}$ \\ \hline & & 294cm$^{2}$ \\ \hline & & 46cm$^{2}$ \\ \hline & & 329cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 12.02cm & 24.04cm & 454cm$^{2}$ \\ \hline 8.88cm & 17.77cm & 248cm$^{2}$ \\ \hline 11.55cm & 23.1cm & 419cm$^{2}$ \\ \hline 5.86cm & 11.73cm & 108cm$^{2}$ \\ \hline 10.88cm & 21.76cm & 372cm$^{2}$ \\ \hline 9.67cm & 19.35cm & 294cm$^{2}$ \\ \hline 3.83cm & 7.65cm & 46cm$^{2}$ \\ \hline 10.23cm & 20.47cm & 329cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 264cm$^{2}$\\ \hline & & 72cm$^{2}$\\ \hline & & 198cm$^{2}$\\ \hline & & 97cm$^{2}$\\ \hline & &110cm$^{2}$ \\ \hline & & 160cm$^{2}$ \\ \hline & & 287cm$^{2}$ \\ \hline & & 374cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 9.17cm & 18.33cm & 264cm$^{2}$ \\ \hline 4.79cm & 9.57cm & 72cm$^{2}$ \\ \hline 7.94cm & 15.88cm & 198cm$^{2}$ \\ \hline 5.56cm & 11.11cm & 97cm$^{2}$ \\ \hline 5.92cm & 11.83cm & 110cm$^{2}$ \\ \hline 7.14cm & 14.27cm & 160cm$^{2}$ \\ \hline 9.56cm & 19.12cm & 287cm$^{2}$ \\ \hline 10.91cm & 21.82cm & 374cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 151cm$^{2}$\\ \hline & & 115cm$^{2}$\\ \hline & & 300cm$^{2}$\\ \hline & & 263cm$^{2}$\\ \hline & &258cm$^{2}$ \\ \hline & & 11cm$^{2}$ \\ \hline & & 220cm$^{2}$ \\ \hline & & 82cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 6.93cm & 13.87cm & 151cm$^{2}$ \\ \hline 6.05cm & 12.1cm & 115cm$^{2}$ \\ \hline 9.77cm & 19.54cm & 300cm$^{2}$ \\ \hline 9.15cm & 18.3cm & 263cm$^{2}$ \\ \hline 9.06cm & 18.12cm & 258cm$^{2}$ \\ \hline 1.87cm & 3.74cm & 11cm$^{2}$ \\ \hline 8.37cm & 16.74cm & 220cm$^{2}$ \\ \hline 5.11cm & 10.22cm & 82cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 35cm$^{2}$\\ \hline & & 81cm$^{2}$\\ \hline & & 137cm$^{2}$\\ \hline & & 108cm$^{2}$\\ \hline & &381cm$^{2}$ \\ \hline & & 449cm$^{2}$ \\ \hline & & 100cm$^{2}$ \\ \hline & & 391cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 3.34cm & 6.68cm & 35cm$^{2}$ \\ \hline 5.08cm & 10.16cm & 81cm$^{2}$ \\ \hline 6.6cm & 13.21cm & 137cm$^{2}$ \\ \hline 5.86cm & 11.73cm & 108cm$^{2}$ \\ \hline 11.01cm & 22.03cm & 381cm$^{2}$ \\ \hline 11.95cm & 23.91cm & 449cm$^{2}$ \\ \hline 5.64cm & 11.28cm & 100cm$^{2}$ \\ \hline 11.16cm & 22.31cm & 391cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 388cm$^{2}$\\ \hline & & 178cm$^{2}$\\ \hline & & 67cm$^{2}$\\ \hline & & 339cm$^{2}$\\ \hline & &41cm$^{2}$ \\ \hline & & 182cm$^{2}$ \\ \hline & & 474cm$^{2}$ \\ \hline & & 261cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 11.11cm & 22.23cm & 388cm$^{2}$ \\ \hline 7.53cm & 15.05cm & 178cm$^{2}$ \\ \hline 4.62cm & 9.24cm & 67cm$^{2}$ \\ \hline 10.39cm & 20.78cm & 339cm$^{2}$ \\ \hline 3.61cm & 7.23cm & 41cm$^{2}$ \\ \hline 7.61cm & 15.22cm & 182cm$^{2}$ \\ \hline 12.28cm & 24.57cm & 474cm$^{2}$ \\ \hline 9.11cm & 18.23cm & 261cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 286cm$^{2}$\\ \hline & & 254cm$^{2}$\\ \hline & & 475cm$^{2}$\\ \hline & & 45cm$^{2}$\\ \hline & &308cm$^{2}$ \\ \hline & & 147cm$^{2}$ \\ \hline & & 468cm$^{2}$ \\ \hline & & 194cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 9.54cm & 19.08cm & 286cm$^{2}$ \\ \hline 8.99cm & 17.98cm & 254cm$^{2}$ \\ \hline 12.3cm & 24.59cm & 475cm$^{2}$ \\ \hline 3.78cm & 7.57cm & 45cm$^{2}$ \\ \hline 9.9cm & 19.8cm & 308cm$^{2}$ \\ \hline 6.84cm & 13.68cm & 147cm$^{2}$ \\ \hline 12.21cm & 24.41cm & 468cm$^{2}$ \\ \hline 7.86cm & 15.72cm & 194cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 262cm$^{2}$\\ \hline & & 66cm$^{2}$\\ \hline & & 85cm$^{2}$\\ \hline & & 433cm$^{2}$\\ \hline & &315cm$^{2}$ \\ \hline & & 466cm$^{2}$ \\ \hline & & 240cm$^{2}$ \\ \hline & & 411cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 9.13cm & 18.26cm & 262cm$^{2}$ \\ \hline 4.58cm & 9.17cm & 66cm$^{2}$ \\ \hline 5.2cm & 10.4cm & 85cm$^{2}$ \\ \hline 11.74cm & 23.48cm & 433cm$^{2}$ \\ \hline 10.01cm & 20.03cm & 315cm$^{2}$ \\ \hline 12.18cm & 24.36cm & 466cm$^{2}$ \\ \hline 8.74cm & 17.48cm & 240cm$^{2}$ \\ \hline 11.44cm & 22.88cm & 411cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 19cm$^{2}$\\ \hline & & 247cm$^{2}$\\ \hline & & 221cm$^{2}$\\ \hline & & 433cm$^{2}$\\ \hline & &321cm$^{2}$ \\ \hline & & 424cm$^{2}$ \\ \hline & & 310cm$^{2}$ \\ \hline & & 258cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 2.46cm & 4.92cm & 19cm$^{2}$ \\ \hline 8.87cm & 17.73cm & 247cm$^{2}$ \\ \hline 8.39cm & 16.77cm & 221cm$^{2}$ \\ \hline 11.74cm & 23.48cm & 433cm$^{2}$ \\ \hline 10.11cm & 20.22cm & 321cm$^{2}$ \\ \hline 11.62cm & 23.23cm & 424cm$^{2}$ \\ \hline 9.93cm & 19.87cm & 310cm$^{2}$ \\ \hline 9.06cm & 18.12cm & 258cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 272cm$^{2}$\\ \hline & & 372cm$^{2}$\\ \hline & & 190cm$^{2}$\\ \hline & & 465cm$^{2}$\\ \hline & &322cm$^{2}$ \\ \hline & & 220cm$^{2}$ \\ \hline & & 252cm$^{2}$ \\ \hline & & 476cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 9.3cm & 18.61cm & 272cm$^{2}$ \\ \hline 10.88cm & 21.76cm & 372cm$^{2}$ \\ \hline 7.78cm & 15.55cm & 190cm$^{2}$ \\ \hline 12.17cm & 24.33cm & 465cm$^{2}$ \\ \hline 10.12cm & 20.25cm & 322cm$^{2}$ \\ \hline 8.37cm & 16.74cm & 220cm$^{2}$ \\ \hline 8.96cm & 17.91cm & 252cm$^{2}$ \\ \hline 12.31cm & 24.62cm & 476cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 436cm$^{2}$\\ \hline & & 247cm$^{2}$\\ \hline & & 13cm$^{2}$\\ \hline & & 331cm$^{2}$\\ \hline & &116cm$^{2}$ \\ \hline & & 370cm$^{2}$ \\ \hline & & 321cm$^{2}$ \\ \hline & & 153cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 11.78cm & 23.56cm & 436cm$^{2}$ \\ \hline 8.87cm & 17.73cm & 247cm$^{2}$ \\ \hline 2.03cm & 4.07cm & 13cm$^{2}$ \\ \hline 10.26cm & 20.53cm & 331cm$^{2}$ \\ \hline 6.08cm & 12.15cm & 116cm$^{2}$ \\ \hline 10.85cm & 21.7cm & 370cm$^{2}$ \\ \hline 10.11cm & 20.22cm & 321cm$^{2}$ \\ \hline 6.98cm & 13.96cm & 153cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 107cm$^{2}$\\ \hline & & 92cm$^{2}$\\ \hline & & 398cm$^{2}$\\ \hline & & 400cm$^{2}$\\ \hline & &281cm$^{2}$ \\ \hline & & 179cm$^{2}$ \\ \hline & & 259cm$^{2}$ \\ \hline & & 311cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 5.84cm & 11.67cm & 107cm$^{2}$ \\ \hline 5.41cm & 10.82cm & 92cm$^{2}$ \\ \hline 11.26cm & 22.51cm & 398cm$^{2}$ \\ \hline 11.28cm & 22.57cm & 400cm$^{2}$ \\ \hline 9.46cm & 18.92cm & 281cm$^{2}$ \\ \hline 7.55cm & 15.1cm & 179cm$^{2}$ \\ \hline 9.08cm & 18.16cm & 259cm$^{2}$ \\ \hline 9.95cm & 19.9cm & 311cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 458cm$^{2}$\\ \hline & & 71cm$^{2}$\\ \hline & & 312cm$^{2}$\\ \hline & & 476cm$^{2}$\\ \hline & &209cm$^{2}$ \\ \hline & & 415cm$^{2}$ \\ \hline & & 147cm$^{2}$ \\ \hline & & 460cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 12.07cm & 24.15cm & 458cm$^{2}$ \\ \hline 4.75cm & 9.51cm & 71cm$^{2}$ \\ \hline 9.97cm & 19.93cm & 312cm$^{2}$ \\ \hline 12.31cm & 24.62cm & 476cm$^{2}$ \\ \hline 8.16cm & 16.31cm & 209cm$^{2}$ \\ \hline 11.49cm & 22.99cm & 415cm$^{2}$ \\ \hline 6.84cm & 13.68cm & 147cm$^{2}$ \\ \hline 12.1cm & 24.2cm & 460cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 233cm$^{2}$\\ \hline & & 323cm$^{2}$\\ \hline & & 422cm$^{2}$\\ \hline & & 381cm$^{2}$\\ \hline & &180cm$^{2}$ \\ \hline & & 357cm$^{2}$ \\ \hline & & 332cm$^{2}$ \\ \hline & & 16cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 8.61cm & 17.22cm & 233cm$^{2}$ \\ \hline 10.14cm & 20.28cm & 323cm$^{2}$ \\ \hline 11.59cm & 23.18cm & 422cm$^{2}$ \\ \hline 11.01cm & 22.03cm & 381cm$^{2}$ \\ \hline 7.57cm & 15.14cm & 180cm$^{2}$ \\ \hline 10.66cm & 21.32cm & 357cm$^{2}$ \\ \hline 10.28cm & 20.56cm & 332cm$^{2}$ \\ \hline 2.26cm & 4.51cm & 16cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 257cm$^{2}$\\ \hline & & 139cm$^{2}$\\ \hline & & 418cm$^{2}$\\ \hline & & 352cm$^{2}$\\ \hline & &371cm$^{2}$ \\ \hline & & 160cm$^{2}$ \\ \hline & & 198cm$^{2}$ \\ \hline & & 88cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 9.04cm & 18.09cm & 257cm$^{2}$ \\ \hline 6.65cm & 13.3cm & 139cm$^{2}$ \\ \hline 11.53cm & 23.07cm & 418cm$^{2}$ \\ \hline 10.59cm & 21.17cm & 352cm$^{2}$ \\ \hline 10.87cm & 21.73cm & 371cm$^{2}$ \\ \hline 7.14cm & 14.27cm & 160cm$^{2}$ \\ \hline 7.94cm & 15.88cm & 198cm$^{2}$ \\ \hline 5.29cm & 10.59cm & 88cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 31cm$^{2}$\\ \hline & & 315cm$^{2}$\\ \hline & & 51cm$^{2}$\\ \hline & & 49cm$^{2}$\\ \hline & &283cm$^{2}$ \\ \hline & & 96cm$^{2}$ \\ \hline & & 74cm$^{2}$ \\ \hline & & 197cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 3.14cm & 6.28cm & 31cm$^{2}$ \\ \hline 10.01cm & 20.03cm & 315cm$^{2}$ \\ \hline 4.03cm & 8.06cm & 51cm$^{2}$ \\ \hline 3.95cm & 7.9cm & 49cm$^{2}$ \\ \hline 9.49cm & 18.98cm & 283cm$^{2}$ \\ \hline 5.53cm & 11.06cm & 96cm$^{2}$ \\ \hline 4.85cm & 9.71cm & 74cm$^{2}$ \\ \hline 7.92cm & 15.84cm & 197cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 93cm$^{2}$\\ \hline & & 117cm$^{2}$\\ \hline & & 477cm$^{2}$\\ \hline & & 387cm$^{2}$\\ \hline & &100cm$^{2}$ \\ \hline & & 401cm$^{2}$ \\ \hline & & 89cm$^{2}$ \\ \hline & & 371cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 5.44cm & 10.88cm & 93cm$^{2}$ \\ \hline 6.1cm & 12.21cm & 117cm$^{2}$ \\ \hline 12.32cm & 24.64cm & 477cm$^{2}$ \\ \hline 11.1cm & 22.2cm & 387cm$^{2}$ \\ \hline 5.64cm & 11.28cm & 100cm$^{2}$ \\ \hline 11.3cm & 22.6cm & 401cm$^{2}$ \\ \hline 5.32cm & 10.65cm & 89cm$^{2}$ \\ \hline 10.87cm & 21.73cm & 371cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 79cm$^{2}$\\ \hline & & 299cm$^{2}$\\ \hline & & 154cm$^{2}$\\ \hline & & 229cm$^{2}$\\ \hline & &366cm$^{2}$ \\ \hline & & 263cm$^{2}$ \\ \hline & & 37cm$^{2}$ \\ \hline & & 382cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 5.01cm & 10.03cm & 79cm$^{2}$ \\ \hline 9.76cm & 19.51cm & 299cm$^{2}$ \\ \hline 7.0cm & 14.0cm & 154cm$^{2}$ \\ \hline 8.54cm & 17.08cm & 229cm$^{2}$ \\ \hline 10.79cm & 21.59cm & 366cm$^{2}$ \\ \hline 9.15cm & 18.3cm & 263cm$^{2}$ \\ \hline 3.43cm & 6.86cm & 37cm$^{2}$ \\ \hline 11.03cm & 22.05cm & 382cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 36cm$^{2}$\\ \hline & & 13cm$^{2}$\\ \hline & & 432cm$^{2}$\\ \hline & & 104cm$^{2}$\\ \hline & &44cm$^{2}$ \\ \hline & & 441cm$^{2}$ \\ \hline & & 158cm$^{2}$ \\ \hline & & 319cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 3.39cm & 6.77cm & 36cm$^{2}$ \\ \hline 2.03cm & 4.07cm & 13cm$^{2}$ \\ \hline 11.73cm & 23.45cm & 432cm$^{2}$ \\ \hline 5.75cm & 11.51cm & 104cm$^{2}$ \\ \hline 3.74cm & 7.48cm & 44cm$^{2}$ \\ \hline 11.85cm & 23.7cm & 441cm$^{2}$ \\ \hline 7.09cm & 14.18cm & 158cm$^{2}$ \\ \hline 10.08cm & 20.15cm & 319cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 12cm$^{2}$\\ \hline & & 361cm$^{2}$\\ \hline & & 316cm$^{2}$\\ \hline & & 477cm$^{2}$\\ \hline & &313cm$^{2}$ \\ \hline & & 24cm$^{2}$ \\ \hline & & 286cm$^{2}$ \\ \hline & & 274cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 1.95cm & 3.91cm & 12cm$^{2}$ \\ \hline 10.72cm & 21.44cm & 361cm$^{2}$ \\ \hline 10.03cm & 20.06cm & 316cm$^{2}$ \\ \hline 12.32cm & 24.64cm & 477cm$^{2}$ \\ \hline 9.98cm & 19.96cm & 313cm$^{2}$ \\ \hline 2.76cm & 5.53cm & 24cm$^{2}$ \\ \hline 9.54cm & 19.08cm & 286cm$^{2}$ \\ \hline 9.34cm & 18.68cm & 274cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 300cm$^{2}$\\ \hline & & 428cm$^{2}$\\ \hline & & 222cm$^{2}$\\ \hline & & 327cm$^{2}$\\ \hline & &452cm$^{2}$ \\ \hline & & 418cm$^{2}$ \\ \hline & & 177cm$^{2}$ \\ \hline & & 499cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 9.77cm & 19.54cm & 300cm$^{2}$ \\ \hline 11.67cm & 23.34cm & 428cm$^{2}$ \\ \hline 8.41cm & 16.81cm & 222cm$^{2}$ \\ \hline 10.2cm & 20.4cm & 327cm$^{2}$ \\ \hline 11.99cm & 23.99cm & 452cm$^{2}$ \\ \hline 11.53cm & 23.07cm & 418cm$^{2}$ \\ \hline 7.51cm & 15.01cm & 177cm$^{2}$ \\ \hline 12.6cm & 25.21cm & 499cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 410cm$^{2}$\\ \hline & & 464cm$^{2}$\\ \hline & & 499cm$^{2}$\\ \hline & & 468cm$^{2}$\\ \hline & &177cm$^{2}$ \\ \hline & & 374cm$^{2}$ \\ \hline & & 366cm$^{2}$ \\ \hline & & 148cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 11.42cm & 22.85cm & 410cm$^{2}$ \\ \hline 12.15cm & 24.31cm & 464cm$^{2}$ \\ \hline 12.6cm & 25.21cm & 499cm$^{2}$ \\ \hline 12.21cm & 24.41cm & 468cm$^{2}$ \\ \hline 7.51cm & 15.01cm & 177cm$^{2}$ \\ \hline 10.91cm & 21.82cm & 374cm$^{2}$ \\ \hline 10.79cm & 21.59cm & 366cm$^{2}$ \\ \hline 6.86cm & 13.73cm & 148cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 440cm$^{2}$\\ \hline & & 329cm$^{2}$\\ \hline & & 131cm$^{2}$\\ \hline & & 117cm$^{2}$\\ \hline & &452cm$^{2}$ \\ \hline & & 18cm$^{2}$ \\ \hline & & 442cm$^{2}$ \\ \hline & & 83cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 11.83cm & 23.67cm & 440cm$^{2}$ \\ \hline 10.23cm & 20.47cm & 329cm$^{2}$ \\ \hline 6.46cm & 12.91cm & 131cm$^{2}$ \\ \hline 6.1cm & 12.21cm & 117cm$^{2}$ \\ \hline 11.99cm & 23.99cm & 452cm$^{2}$ \\ \hline 2.39cm & 4.79cm & 18cm$^{2}$ \\ \hline 11.86cm & 23.72cm & 442cm$^{2}$ \\ \hline 5.14cm & 10.28cm & 83cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 287cm$^{2}$\\ \hline & & 270cm$^{2}$\\ \hline & & 223cm$^{2}$\\ \hline & & 496cm$^{2}$\\ \hline & &208cm$^{2}$ \\ \hline & & 58cm$^{2}$ \\ \hline & & 216cm$^{2}$ \\ \hline & & 104cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 9.56cm & 19.12cm & 287cm$^{2}$ \\ \hline 9.27cm & 18.54cm & 270cm$^{2}$ \\ \hline 8.43cm & 16.85cm & 223cm$^{2}$ \\ \hline 12.57cm & 25.13cm & 496cm$^{2}$ \\ \hline 8.14cm & 16.27cm & 208cm$^{2}$ \\ \hline 4.3cm & 8.59cm & 58cm$^{2}$ \\ \hline 8.29cm & 16.58cm & 216cm$^{2}$ \\ \hline 5.75cm & 11.51cm & 104cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 349cm$^{2}$\\ \hline & & 187cm$^{2}$\\ \hline & & 96cm$^{2}$\\ \hline & & 163cm$^{2}$\\ \hline & &284cm$^{2}$ \\ \hline & & 287cm$^{2}$ \\ \hline & & 66cm$^{2}$ \\ \hline & & 490cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 10.54cm & 21.08cm & 349cm$^{2}$ \\ \hline 7.72cm & 15.43cm & 187cm$^{2}$ \\ \hline 5.53cm & 11.06cm & 96cm$^{2}$ \\ \hline 7.2cm & 14.41cm & 163cm$^{2}$ \\ \hline 9.51cm & 19.02cm & 284cm$^{2}$ \\ \hline 9.56cm & 19.12cm & 287cm$^{2}$ \\ \hline 4.58cm & 9.17cm & 66cm$^{2}$ \\ \hline 12.49cm & 24.98cm & 490cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 347cm$^{2}$\\ \hline & & 227cm$^{2}$\\ \hline & & 324cm$^{2}$\\ \hline & & 292cm$^{2}$\\ \hline & &368cm$^{2}$ \\ \hline & & 119cm$^{2}$ \\ \hline & & 63cm$^{2}$ \\ \hline & & 397cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 10.51cm & 21.02cm & 347cm$^{2}$ \\ \hline 8.5cm & 17.0cm & 227cm$^{2}$ \\ \hline 10.16cm & 20.31cm & 324cm$^{2}$ \\ \hline 9.64cm & 19.28cm & 292cm$^{2}$ \\ \hline 10.82cm & 21.65cm & 368cm$^{2}$ \\ \hline 6.15cm & 12.31cm & 119cm$^{2}$ \\ \hline 4.48cm & 8.96cm & 63cm$^{2}$ \\ \hline 11.24cm & 22.48cm & 397cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 380cm$^{2}$\\ \hline & & 104cm$^{2}$\\ \hline & & 355cm$^{2}$\\ \hline & & 64cm$^{2}$\\ \hline & &135cm$^{2}$ \\ \hline & & 39cm$^{2}$ \\ \hline & & 168cm$^{2}$ \\ \hline & & 34cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 11.0cm & 22.0cm & 380cm$^{2}$ \\ \hline 5.75cm & 11.51cm & 104cm$^{2}$ \\ \hline 10.63cm & 21.26cm & 355cm$^{2}$ \\ \hline 4.51cm & 9.03cm & 64cm$^{2}$ \\ \hline 6.56cm & 13.11cm & 135cm$^{2}$ \\ \hline 3.52cm & 7.05cm & 39cm$^{2}$ \\ \hline 7.31cm & 14.63cm & 168cm$^{2}$ \\ \hline 3.29cm & 6.58cm & 34cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 54cm$^{2}$\\ \hline & & 267cm$^{2}$\\ \hline & & 202cm$^{2}$\\ \hline & & 233cm$^{2}$\\ \hline & &26cm$^{2}$ \\ \hline & & 94cm$^{2}$ \\ \hline & & 369cm$^{2}$ \\ \hline & & 171cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 4.15cm & 8.29cm & 54cm$^{2}$ \\ \hline 9.22cm & 18.44cm & 267cm$^{2}$ \\ \hline 8.02cm & 16.04cm & 202cm$^{2}$ \\ \hline 8.61cm & 17.22cm & 233cm$^{2}$ \\ \hline 2.88cm & 5.75cm & 26cm$^{2}$ \\ \hline 5.47cm & 10.94cm & 94cm$^{2}$ \\ \hline 10.84cm & 21.68cm & 369cm$^{2}$ \\ \hline 7.38cm & 14.76cm & 171cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 130cm$^{2}$\\ \hline & & 418cm$^{2}$\\ \hline & & 172cm$^{2}$\\ \hline & & 450cm$^{2}$\\ \hline & &299cm$^{2}$ \\ \hline & & 110cm$^{2}$ \\ \hline & & 150cm$^{2}$ \\ \hline & & 28cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 6.43cm & 12.87cm & 130cm$^{2}$ \\ \hline 11.53cm & 23.07cm & 418cm$^{2}$ \\ \hline 7.4cm & 14.8cm & 172cm$^{2}$ \\ \hline 11.97cm & 23.94cm & 450cm$^{2}$ \\ \hline 9.76cm & 19.51cm & 299cm$^{2}$ \\ \hline 5.92cm & 11.83cm & 110cm$^{2}$ \\ \hline 6.91cm & 13.82cm & 150cm$^{2}$ \\ \hline 2.99cm & 5.97cm & 28cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 345cm$^{2}$\\ \hline & & 384cm$^{2}$\\ \hline & & 349cm$^{2}$\\ \hline & & 212cm$^{2}$\\ \hline & &359cm$^{2}$ \\ \hline & & 141cm$^{2}$ \\ \hline & & 453cm$^{2}$ \\ \hline & & 264cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 10.48cm & 20.96cm & 345cm$^{2}$ \\ \hline 11.06cm & 22.11cm & 384cm$^{2}$ \\ \hline 10.54cm & 21.08cm & 349cm$^{2}$ \\ \hline 8.21cm & 16.43cm & 212cm$^{2}$ \\ \hline 10.69cm & 21.38cm & 359cm$^{2}$ \\ \hline 6.7cm & 13.4cm & 141cm$^{2}$ \\ \hline 12.01cm & 24.02cm & 453cm$^{2}$ \\ \hline 9.17cm & 18.33cm & 264cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 499cm$^{2}$\\ \hline & & 141cm$^{2}$\\ \hline & & 276cm$^{2}$\\ \hline & & 461cm$^{2}$\\ \hline & &222cm$^{2}$ \\ \hline & & 216cm$^{2}$ \\ \hline & & 390cm$^{2}$ \\ \hline & & 106cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 12.6cm & 25.21cm & 499cm$^{2}$ \\ \hline 6.7cm & 13.4cm & 141cm$^{2}$ \\ \hline 9.37cm & 18.75cm & 276cm$^{2}$ \\ \hline 12.11cm & 24.23cm & 461cm$^{2}$ \\ \hline 8.41cm & 16.81cm & 222cm$^{2}$ \\ \hline 8.29cm & 16.58cm & 216cm$^{2}$ \\ \hline 11.14cm & 22.28cm & 390cm$^{2}$ \\ \hline 5.81cm & 11.62cm & 106cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 168cm$^{2}$\\ \hline & & 478cm$^{2}$\\ \hline & & 285cm$^{2}$\\ \hline & & 242cm$^{2}$\\ \hline & &370cm$^{2}$ \\ \hline & & 467cm$^{2}$ \\ \hline & & 246cm$^{2}$ \\ \hline & & 393cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 7.31cm & 14.63cm & 168cm$^{2}$ \\ \hline 12.33cm & 24.67cm & 478cm$^{2}$ \\ \hline 9.52cm & 19.05cm & 285cm$^{2}$ \\ \hline 8.78cm & 17.55cm & 242cm$^{2}$ \\ \hline 10.85cm & 21.7cm & 370cm$^{2}$ \\ \hline 12.19cm & 24.38cm & 467cm$^{2}$ \\ \hline 8.85cm & 17.7cm & 246cm$^{2}$ \\ \hline 11.18cm & 22.37cm & 393cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 122cm$^{2}$\\ \hline & & 306cm$^{2}$\\ \hline & & 162cm$^{2}$\\ \hline & & 207cm$^{2}$\\ \hline & &282cm$^{2}$ \\ \hline & & 127cm$^{2}$ \\ \hline & & 106cm$^{2}$ \\ \hline & & 88cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+ 		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 6.23cm & 12.46cm & 122cm$^{2}$ \\ \hline 9.87cm & 19.74cm & 306cm$^{2}$ \\ \hline 7.18cm & 14.36cm & 162cm$^{2}$ \\ \hline 8.12cm & 16.23cm & 207cm$^{2}$ \\ \hline 9.47cm & 18.95cm & 282cm$^{2}$ \\ \hline 6.36cm & 12.72cm & 127cm$^{2}$ \\ \hline 5.81cm & 11.62cm & 106cm$^{2}$ \\ \hline 5.29cm & 10.59cm & 88cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 282cm$^{2}$\\ \hline & & 157cm$^{2}$\\ \hline & & 346cm$^{2}$\\ \hline & & 303cm$^{2}$\\ \hline & &240cm$^{2}$ \\ \hline & & 41cm$^{2}$ \\ \hline & & 309cm$^{2}$ \\ \hline & & 83cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 9.47cm & 18.95cm & 282cm$^{2}$ \\ \hline 7.07cm & 14.14cm & 157cm$^{2}$ \\ \hline 10.49cm & 20.99cm & 346cm$^{2}$ \\ \hline 9.82cm & 19.64cm & 303cm$^{2}$ \\ \hline 8.74cm & 17.48cm & 240cm$^{2}$ \\ \hline 3.61cm & 7.23cm & 41cm$^{2}$ \\ \hline 9.92cm & 19.84cm & 309cm$^{2}$ \\ \hline 5.14cm & 10.28cm & 83cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 440cm$^{2}$\\ \hline & & 247cm$^{2}$\\ \hline & & 346cm$^{2}$\\ \hline & & 59cm$^{2}$\\ \hline & &379cm$^{2}$ \\ \hline & & 363cm$^{2}$ \\ \hline & & 306cm$^{2}$ \\ \hline & & 430cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 11.83cm & 23.67cm & 440cm$^{2}$ \\ \hline 8.87cm & 17.73cm & 247cm$^{2}$ \\ \hline 10.49cm & 20.99cm & 346cm$^{2}$ \\ \hline 4.33cm & 8.67cm & 59cm$^{2}$ \\ \hline 10.98cm & 21.97cm & 379cm$^{2}$ \\ \hline 10.75cm & 21.5cm & 363cm$^{2}$ \\ \hline 9.87cm & 19.74cm & 306cm$^{2}$ \\ \hline 11.7cm & 23.4cm & 430cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 307cm$^{2}$\\ \hline & & 362cm$^{2}$\\ \hline & & 301cm$^{2}$\\ \hline & & 161cm$^{2}$\\ \hline & &470cm$^{2}$ \\ \hline & & 14cm$^{2}$ \\ \hline & & 464cm$^{2}$ \\ \hline & & 166cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 9.89cm & 19.77cm & 307cm$^{2}$ \\ \hline 10.73cm & 21.47cm & 362cm$^{2}$ \\ \hline 9.79cm & 19.58cm & 301cm$^{2}$ \\ \hline 7.16cm & 14.32cm & 161cm$^{2}$ \\ \hline 12.23cm & 24.46cm & 470cm$^{2}$ \\ \hline 2.11cm & 4.22cm & 14cm$^{2}$ \\ \hline 12.15cm & 24.31cm & 464cm$^{2}$ \\ \hline 7.27cm & 14.54cm & 166cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 346cm$^{2}$\\ \hline & & 44cm$^{2}$\\ \hline & & 394cm$^{2}$\\ \hline & & 36cm$^{2}$\\ \hline & &11cm$^{2}$ \\ \hline & & 117cm$^{2}$ \\ \hline & & 381cm$^{2}$ \\ \hline & & 409cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 10.49cm & 20.99cm & 346cm$^{2}$ \\ \hline 3.74cm & 7.48cm & 44cm$^{2}$ \\ \hline 11.2cm & 22.4cm & 394cm$^{2}$ \\ \hline 3.39cm & 6.77cm & 36cm$^{2}$ \\ \hline 1.87cm & 3.74cm & 11cm$^{2}$ \\ \hline 6.1cm & 12.21cm & 117cm$^{2}$ \\ \hline 11.01cm & 22.03cm & 381cm$^{2}$ \\ \hline 11.41cm & 22.82cm & 409cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 366cm$^{2}$\\ \hline & & 462cm$^{2}$\\ \hline & & 140cm$^{2}$\\ \hline & & 197cm$^{2}$\\ \hline & &488cm$^{2}$ \\ \hline & & 440cm$^{2}$ \\ \hline & & 304cm$^{2}$ \\ \hline & & 221cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 10.79cm & 21.59cm & 366cm$^{2}$ \\ \hline 12.13cm & 24.25cm & 462cm$^{2}$ \\ \hline 6.68cm & 13.35cm & 140cm$^{2}$ \\ \hline 7.92cm & 15.84cm & 197cm$^{2}$ \\ \hline 12.46cm & 24.93cm & 488cm$^{2}$ \\ \hline 11.83cm & 23.67cm & 440cm$^{2}$ \\ \hline 9.84cm & 19.67cm & 304cm$^{2}$ \\ \hline 8.39cm & 16.77cm & 221cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 185cm$^{2}$\\ \hline & & 170cm$^{2}$\\ \hline & & 28cm$^{2}$\\ \hline & & 456cm$^{2}$\\ \hline & &237cm$^{2}$ \\ \hline & & 255cm$^{2}$ \\ \hline & & 390cm$^{2}$ \\ \hline & & 453cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 7.67cm & 15.35cm & 185cm$^{2}$ \\ \hline 7.36cm & 14.71cm & 170cm$^{2}$ \\ \hline 2.99cm & 5.97cm & 28cm$^{2}$ \\ \hline 12.05cm & 24.1cm & 456cm$^{2}$ \\ \hline 8.69cm & 17.37cm & 237cm$^{2}$ \\ \hline 9.01cm & 18.02cm & 255cm$^{2}$ \\ \hline 11.14cm & 22.28cm & 390cm$^{2}$ \\ \hline 12.01cm & 24.02cm & 453cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 65cm$^{2}$\\ \hline & & 216cm$^{2}$\\ \hline & & 102cm$^{2}$\\ \hline & & 439cm$^{2}$\\ \hline & &164cm$^{2}$ \\ \hline & & 141cm$^{2}$ \\ \hline & & 240cm$^{2}$ \\ \hline & & 324cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 4.55cm & 9.1cm & 65cm$^{2}$ \\ \hline 8.29cm & 16.58cm & 216cm$^{2}$ \\ \hline 5.7cm & 11.4cm & 102cm$^{2}$ \\ \hline 11.82cm & 23.64cm & 439cm$^{2}$ \\ \hline 7.23cm & 14.45cm & 164cm$^{2}$ \\ \hline 6.7cm & 13.4cm & 141cm$^{2}$ \\ \hline 8.74cm & 17.48cm & 240cm$^{2}$ \\ \hline 10.16cm & 20.31cm & 324cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 157cm$^{2}$\\ \hline & & 162cm$^{2}$\\ \hline & & 75cm$^{2}$\\ \hline & & 267cm$^{2}$\\ \hline & &43cm$^{2}$ \\ \hline & & 143cm$^{2}$ \\ \hline & & 84cm$^{2}$ \\ \hline & & 330cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 7.07cm & 14.14cm & 157cm$^{2}$ \\ \hline 7.18cm & 14.36cm & 162cm$^{2}$ \\ \hline 4.89cm & 9.77cm & 75cm$^{2}$ \\ \hline 9.22cm & 18.44cm & 267cm$^{2}$ \\ \hline 3.7cm & 7.4cm & 43cm$^{2}$ \\ \hline 6.75cm & 13.49cm & 143cm$^{2}$ \\ \hline 5.17cm & 10.34cm & 84cm$^{2}$ \\ \hline 10.25cm & 20.5cm & 330cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 111cm$^{2}$\\ \hline & & 54cm$^{2}$\\ \hline & & 167cm$^{2}$\\ \hline & & 77cm$^{2}$\\ \hline & &110cm$^{2}$ \\ \hline & & 335cm$^{2}$ \\ \hline & & 355cm$^{2}$ \\ \hline & & 351cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 5.94cm & 11.89cm & 111cm$^{2}$ \\ \hline 4.15cm & 8.29cm & 54cm$^{2}$ \\ \hline 7.29cm & 14.58cm & 167cm$^{2}$ \\ \hline 4.95cm & 9.9cm & 77cm$^{2}$ \\ \hline 5.92cm & 11.83cm & 110cm$^{2}$ \\ \hline 10.33cm & 20.65cm & 335cm$^{2}$ \\ \hline 10.63cm & 21.26cm & 355cm$^{2}$ \\ \hline 10.57cm & 21.14cm & 351cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 210cm$^{2}$\\ \hline & & 270cm$^{2}$\\ \hline & & 114cm$^{2}$\\ \hline & & 326cm$^{2}$\\ \hline & &106cm$^{2}$ \\ \hline & & 435cm$^{2}$ \\ \hline & & 20cm$^{2}$ \\ \hline & & 175cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 8.18cm & 16.35cm & 210cm$^{2}$ \\ \hline 9.27cm & 18.54cm & 270cm$^{2}$ \\ \hline 6.02cm & 12.05cm & 114cm$^{2}$ \\ \hline 10.19cm & 20.37cm & 326cm$^{2}$ \\ \hline 5.81cm & 11.62cm & 106cm$^{2}$ \\ \hline 11.77cm & 23.53cm & 435cm$^{2}$ \\ \hline 2.52cm & 5.05cm & 20cm$^{2}$ \\ \hline 7.46cm & 14.93cm & 175cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 16cm$^{2}$\\ \hline & & 70cm$^{2}$\\ \hline & & 156cm$^{2}$\\ \hline & & 98cm$^{2}$\\ \hline & &90cm$^{2}$ \\ \hline & & 386cm$^{2}$ \\ \hline & & 237cm$^{2}$ \\ \hline & & 367cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 2.26cm & 4.51cm & 16cm$^{2}$ \\ \hline 4.72cm & 9.44cm & 70cm$^{2}$ \\ \hline 7.05cm & 14.09cm & 156cm$^{2}$ \\ \hline 5.59cm & 11.17cm & 98cm$^{2}$ \\ \hline 5.35cm & 10.7cm & 90cm$^{2}$ \\ \hline 11.08cm & 22.17cm & 386cm$^{2}$ \\ \hline 8.69cm & 17.37cm & 237cm$^{2}$ \\ \hline 10.81cm & 21.62cm & 367cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} & & 108cm$^{2}$\\ \hline & & 106cm$^{2}$\\ \hline & & 188cm$^{2}$\\ \hline & & 20cm$^{2}$\\ \hline & &213cm$^{2}$ \\ \hline & & 19cm$^{2}$ \\ \hline & & 31cm$^{2}$ \\ \hline & & 63cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Area \\ \specialrule{1pt}{0pt}{0pt} 5.86cm & 11.73cm & 108cm$^{2}$ \\ \hline 5.81cm & 11.62cm & 106cm$^{2}$ \\ \hline 7.74cm & 15.47cm & 188cm$^{2}$ \\ \hline 2.52cm & 5.05cm & 20cm$^{2}$ \\ \hline 8.23cm & 16.47cm & 213cm$^{2}$ \\ \hline 2.46cm & 4.92cm & 19cm$^{2}$ \\ \hline 3.14cm & 6.28cm & 31cm$^{2}$ \\ \hline 4.48cm & 8.96cm & 63cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\end{document}

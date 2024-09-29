@@ -1,0 +1,58 @@
+\documentclass[11pt, varwidth=true]{article} 
+\usepackage[a4paper,landscape,top=0.5cm,bottom=0.5cm,left=0.5cm,right=0.5cm]{geometry}
+\usepackage[scaled=1]{helvet}
+\usepackage[T1]{fontenc}
+\usepackage{sansmath}
+\usepackage{amsmath}
+\usepackage{relsize}
+\usepackage{siunitx}
+\sisetup{detect-all}
+\sansmath
+\renewcommand\familydefault{\sfdefault} 
+\usepackage[none]{hyphenat}
+\usepackage{array}
+\usepackage{multicol}
+
+
+\usepackage{overpic}
+\usepackage{colortbl}
+\usepackage{booktabs}
+\usepackage{fancybox}
+\usepackage{relsize}
+
+
+
+
+\usepackage[overlay,absolute]{textpos}
+
+
+
+\newcommand\PlaceText[3]{%
+\begin{textblock*}{10in}(#1,#2)  %% change width of box from 10in as you wish
+#3
+\end{textblock*}
+}%
+\textblockorigin{-5mm}{0mm}   %% Default origin top left corner and it can be changed in this line
+
+
+
+
+\begin{document}
+\pagestyle{empty}
+{\PlaceText{102.5mm}{208mm}{\tiny{This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.}}
+\centering \underline{title}\\[0.3cm]
+\begin{tabular}{c c c c}
+	1 & \parbox[t]{13cm}{q1 \\[0.1cm]}& 3 & \parbox[t]{13cm}{q3 } \\
+	2 & \parbox[t]{13cm}{q2 \\[0.1cm]}& 4 & \parbox[t]{13cm}{q4 } \\
+\end{tabular}
+
+\newpage
+
+{\PlaceText{27mm}{208mm}{\tiny{This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.}}
+\centering \underline{title - Answers}\\[0.3cm]
+\begin{tabular}{c c c c}
+	1 & \parbox[t]{13cm}{q1 \\a1 \\[0.1cm]}& 3 & \parbox[t]{13cm}{q3 \\a3 } \\
+	2 & \parbox[t]{13cm}{q2 \\a2 \\[0.1cm]}& 4 & \parbox[t]{13cm}{q4 \\a4 } \\
+\end{tabular}
+
+\end{document}

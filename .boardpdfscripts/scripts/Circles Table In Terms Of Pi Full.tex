@@ -1,0 +1,567 @@
+\documentclass[13.5pt, varwidth=true]{beamer} 
+\usepackage[scaled=1]{helvet}
+\usepackage[T1]{fontenc}
+\usepackage{overpic}
+\usepackage{sansmath}
+\usepackage{multicol}
+\sansmath
+\renewcommand\familydefault{\sfdefault}
+%\DeclareMathSizes{11}{19}{13}{9}   % For size 11 text
+\usefonttheme{professionalfonts}
+\usepackage{colortbl}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{fancybox}
+\usepackage{relsize}
+\usepackage{siunitx}
+\sisetup{detect-all}
+\definecolor{que1}{HTML}{FFC5FA}
+\definecolor{que2}{HTML}{C6D7FD}
+\definecolor{bgre}{HTML}{DCDCDC}
+\definecolor{tgre}{HTML}{BCBCBC}
+\definecolor{ared}{HTML}{850000}
+\setbeamercolor{background canvas}{bg=bgre}
+\setbeamercolor{que1}{fg=black,bg=que1}
+\setbeamercolor{que2}{fg=black,bg=que2}
+\usetheme{CambridgeUS}
+\usecolortheme{beetle}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}{\centerline{\textcolor{tgre}{This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License}}}
+\usepackage{graphicx}
+\setbeamercolor*{palette tertiary}{bg=que1}
+\setbeamercolor*{palette primary}{bg=que2}
+\begin{document}
+\date{}
+
+\section[Circles]{what is this bit?}
+\subsection[title]{and this?}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 4.5cm & & &  \\ \hline 30cm & & & \\ \hline & 55cm & & \\ \hline & 56cm & & \\ \hline & &98$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 64$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 1681$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 36$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 4.5cm & 9cm & 9$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 20.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 30cm & 60cm & 60$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 900$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 27.5cm & 55cm & 55$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 756.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 28cm & 56cm & 56$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 784$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 49cm & 98cm & 98$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2401$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 32cm & 64cm & 64$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1024$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 41cm & 82cm & 82$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1681$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 6cm & 12cm & 12$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 36$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 18cm & & &  \\ \hline 5.5cm & & & \\ \hline & 6cm & & \\ \hline & 22cm & & \\ \hline & &98$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 74$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 2.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 441$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+ 		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 18cm & 36cm & 36$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 324$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 5.5cm & 11cm & 11$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 30.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 3cm & 6cm & 6$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 9$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 11cm & 22cm & 22$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 121$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 49cm & 98cm & 98$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2401$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 37cm & 74cm & 74$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1369$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 1.5cm & 3cm & 3$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 21cm & 42cm & 42$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 441$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 47cm & & &  \\ \hline 19.5cm & & & \\ \hline & 90cm & & \\ \hline & 18cm & & \\ \hline & &50$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 81$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 756.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 1190.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 47cm & 94cm & 94$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2209$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 19.5cm & 39cm & 39$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 380.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 45cm & 90cm & 90$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2025$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 9cm & 18cm & 18$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 81$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 25cm & 50cm & 50$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 625$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 40.5cm & 81cm & 81$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1640.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 27.5cm & 55cm & 55$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 756.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 34.5cm & 69cm & 69$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1190.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 10cm & & &  \\ \hline 25cm & & & \\ \hline & 24cm & & \\ \hline & 7cm & & \\ \hline & &68$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 93$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 42.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 400$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 10cm & 20cm & 20$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 100$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 25cm & 50cm & 50$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 625$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 12cm & 24cm & 24$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 144$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 3.5cm & 7cm & 7$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 12.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 34cm & 68cm & 68$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1156$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 46.5cm & 93cm & 93$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2162.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 6.5cm & 13cm & 13$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 42.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 20cm & 40cm & 40$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 400$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 6.5cm & & &  \\ \hline 20cm & & & \\ \hline & 34cm & & \\ \hline & 97cm & & \\ \hline & &33$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 4$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 2450.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 2116$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 6.5cm & 13cm & 13$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 42.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 20cm & 40cm & 40$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 400$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 17cm & 34cm & 34$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 289$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 48.5cm & 97cm & 97$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2352.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 16.5cm & 33cm & 33$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 272.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 2cm & 4cm & 4$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 4$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 49.5cm & 99cm & 99$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2450.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 46cm & 92cm & 92$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2116$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 19cm & & &  \\ \hline 23.5cm & & & \\ \hline & 21cm & & \\ \hline & 84cm & & \\ \hline & &76$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 40$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 676$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 342.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 19cm & 38cm & 38$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 361$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 23.5cm & 47cm & 47$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 552.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 10.5cm & 21cm & 21$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 110.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 42cm & 84cm & 84$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1764$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 38cm & 76cm & 76$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1444$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 20cm & 40cm & 40$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 400$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 26cm & 52cm & 52$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 676$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 18.5cm & 37cm & 37$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 342.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 30cm & & &  \\ \hline 2.5cm & & & \\ \hline & 53cm & & \\ \hline & 31cm & & \\ \hline & &97$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 14$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 110.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 289$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 30cm & 60cm & 60$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 900$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 2.5cm & 5cm & 5$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 6.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 26.5cm & 53cm & 53$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 702.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 15.5cm & 31cm & 31$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 240.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 48.5cm & 97cm & 97$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2352.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 7cm & 14cm & 14$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 49$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 10.5cm & 21cm & 21$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 110.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 17cm & 34cm & 34$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 289$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 46.5cm & & &  \\ \hline 39cm & & & \\ \hline & 32cm & & \\ \hline & 79cm & & \\ \hline & &21$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 64$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 2070.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 1892.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 46.5cm & 93cm & 93$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2162.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 39cm & 78cm & 78$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1521$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 16cm & 32cm & 32$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 256$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 39.5cm & 79cm & 79$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1560.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 10.5cm & 21cm & 21$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 110.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 32cm & 64cm & 64$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1024$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 45.5cm & 91cm & 91$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2070.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 43.5cm & 87cm & 87$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1892.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 13.5cm & & &  \\ \hline 30.5cm & & & \\ \hline & 95cm & & \\ \hline & 73cm & & \\ \hline & &32$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 17$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 992.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 16$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 13.5cm & 27cm & 27$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 182.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 30.5cm & 61cm & 61$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 930.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 47.5cm & 95cm & 95$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2256.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 36.5cm & 73cm & 73$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1332.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 16cm & 32cm & 32$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 256$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 8.5cm & 17cm & 17$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 72.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 31.5cm & 63cm & 63$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 992.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 4cm & 8cm & 8$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 16$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 40.5cm & & &  \\ \hline 25.5cm & & & \\ \hline & 53cm & & \\ \hline & 89cm & & \\ \hline & &4$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 96$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 2209$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 64$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 40.5cm & 81cm & 81$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1640.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 25.5cm & 51cm & 51$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 650.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 26.5cm & 53cm & 53$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 702.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 44.5cm & 89cm & 89$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1980.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 2cm & 4cm & 4$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 4$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 48cm & 96cm & 96$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2304$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 47cm & 94cm & 94$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2209$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 8cm & 16cm & 16$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 64$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 41.5cm & & &  \\ \hline 22.5cm & & & \\ \hline & 40cm & & \\ \hline & 31cm & & \\ \hline & &23$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 39$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 210.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 1332.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 41.5cm & 83cm & 83$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1722.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 22.5cm & 45cm & 45$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 506.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 20cm & 40cm & 40$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 400$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 15.5cm & 31cm & 31$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 240.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 11.5cm & 23cm & 23$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 132.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 19.5cm & 39cm & 39$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 380.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 14.5cm & 29cm & 29$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 210.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 36.5cm & 73cm & 73$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1332.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 14cm & & &  \\ \hline 5.5cm & & & \\ \hline & 91cm & & \\ \hline & 62cm & & \\ \hline & &49$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 44$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 625$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 1681$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 14cm & 28cm & 28$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 196$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 5.5cm & 11cm & 11$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 30.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 45.5cm & 91cm & 91$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2070.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 31cm & 62cm & 62$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 961$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 24.5cm & 49cm & 49$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 600.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 22cm & 44cm & 44$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 484$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 25cm & 50cm & 50$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 625$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 41cm & 82cm & 82$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1681$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 38cm & & &  \\ \hline 50cm & & & \\ \hline & 19cm & & \\ \hline & 14cm & & \\ \hline & &63$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 55$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 506.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 841$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 38cm & 76cm & 76$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1444$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 50cm & 100cm & 100$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2500$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 9.5cm & 19cm & 19$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 90.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 7cm & 14cm & 14$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 49$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 31.5cm & 63cm & 63$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 992.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 27.5cm & 55cm & 55$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 756.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 22.5cm & 45cm & 45$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 506.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 29cm & 58cm & 58$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 841$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 6.5cm & & &  \\ \hline 14cm & & & \\ \hline & 38cm & & \\ \hline & 73cm & & \\ \hline & &8$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 64$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 961$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 2070.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 6.5cm & 13cm & 13$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 42.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 14cm & 28cm & 28$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 196$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 19cm & 38cm & 38$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 361$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 36.5cm & 73cm & 73$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1332.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 4cm & 8cm & 8$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 16$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 32cm & 64cm & 64$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1024$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 31cm & 62cm & 62$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 961$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 45.5cm & 91cm & 91$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2070.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 28cm & & &  \\ \hline 6cm & & & \\ \hline & 92cm & & \\ \hline & 25cm & & \\ \hline & &90$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 76$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 380.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 182.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 28cm & 56cm & 56$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 784$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 6cm & 12cm & 12$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 36$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 46cm & 92cm & 92$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2116$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 12.5cm & 25cm & 25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 156.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 45cm & 90cm & 90$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2025$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 38cm & 76cm & 76$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1444$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 19.5cm & 39cm & 39$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 380.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 13.5cm & 27cm & 27$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 182.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 24.5cm & & &  \\ \hline 10.5cm & & & \\ \hline & 3cm & & \\ \hline & 24cm & & \\ \hline & &36$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 14$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 784$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 1190.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 24.5cm & 49cm & 49$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 600.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 10.5cm & 21cm & 21$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 110.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 1.5cm & 3cm & 3$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 12cm & 24cm & 24$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 144$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 18cm & 36cm & 36$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 324$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 7cm & 14cm & 14$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 49$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 28cm & 56cm & 56$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 784$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 34.5cm & 69cm & 69$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1190.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 7.5cm & & &  \\ \hline 22cm & & & \\ \hline & 82cm & & \\ \hline & 73cm & & \\ \hline & &70$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 41$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 1260.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 2.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 7.5cm & 15cm & 15$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 56.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 22cm & 44cm & 44$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 484$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 41cm & 82cm & 82$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1681$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 36.5cm & 73cm & 73$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1332.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 35cm & 70cm & 70$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1225$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 20.5cm & 41cm & 41$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 420.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 35.5cm & 71cm & 71$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1260.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 1.5cm & 3cm & 3$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 19cm & & &  \\ \hline 13.5cm & & & \\ \hline & 10cm & & \\ \hline & 91cm & & \\ \hline & &6$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 90$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 1806.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 30.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 19cm & 38cm & 38$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 361$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 13.5cm & 27cm & 27$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 182.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 5cm & 10cm & 10$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 45.5cm & 91cm & 91$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2070.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 3cm & 6cm & 6$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 9$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 45cm & 90cm & 90$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2025$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 42.5cm & 85cm & 85$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1806.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 5.5cm & 11cm & 11$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 30.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 42.5cm & & &  \\ \hline 24cm & & & \\ \hline & 92cm & & \\ \hline & 86cm & & \\ \hline & &45$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 6$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 182.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 2256.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 42.5cm & 85cm & 85$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1806.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 24cm & 48cm & 48$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 576$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 46cm & 92cm & 92$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2116$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 43cm & 86cm & 86$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1849$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 22.5cm & 45cm & 45$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 506.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 3cm & 6cm & 6$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 9$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 13.5cm & 27cm & 27$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 182.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 47.5cm & 95cm & 95$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2256.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 11cm & & &  \\ \hline 41.5cm & & & \\ \hline & 52cm & & \\ \hline & 63cm & & \\ \hline & &73$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 32$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 400$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 841$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 11cm & 22cm & 22$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 121$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 41.5cm & 83cm & 83$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1722.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 26cm & 52cm & 52$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 676$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 31.5cm & 63cm & 63$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 992.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 36.5cm & 73cm & 73$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1332.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 16cm & 32cm & 32$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 256$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 20cm & 40cm & 40$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 400$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 29cm & 58cm & 58$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 841$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 24cm & & &  \\ \hline 7cm & & & \\ \hline & 43cm & & \\ \hline & 76cm & & \\ \hline & &21$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 11$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 144$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 529$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 24cm & 48cm & 48$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 576$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 7cm & 14cm & 14$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 49$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 21.5cm & 43cm & 43$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 462.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 38cm & 76cm & 76$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1444$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 10.5cm & 21cm & 21$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 110.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 5.5cm & 11cm & 11$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 30.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 12cm & 24cm & 24$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 144$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 23cm & 46cm & 46$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 529$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 3cm & & &  \\ \hline 11cm & & & \\ \hline & 77cm & & \\ \hline & 28cm & & \\ \hline & &17$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 74$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 600.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 16$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 3cm & 6cm & 6$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 9$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 11cm & 22cm & 22$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 121$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 38.5cm & 77cm & 77$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1482.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 14cm & 28cm & 28$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 196$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 8.5cm & 17cm & 17$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 72.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 37cm & 74cm & 74$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1369$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 24.5cm & 49cm & 49$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 600.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 4cm & 8cm & 8$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 16$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 25cm & & &  \\ \hline 13cm & & & \\ \hline & 68cm & & \\ \hline & 48cm & & \\ \hline & &2$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 11$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 380.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 56.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 25cm & 50cm & 50$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 625$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 13cm & 26cm & 26$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 169$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 34cm & 68cm & 68$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1156$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 24cm & 48cm & 48$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 576$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 1cm & 2cm & 2$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 5.5cm & 11cm & 11$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 30.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 19.5cm & 39cm & 39$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 380.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 7.5cm & 15cm & 15$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 56.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 3cm & & &  \\ \hline 11cm & & & \\ \hline & 40cm & & \\ \hline & 61cm & & \\ \hline & &98$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 84$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 16$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 1722.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 3cm & 6cm & 6$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 9$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 11cm & 22cm & 22$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 121$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 20cm & 40cm & 40$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 400$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 30.5cm & 61cm & 61$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 930.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 49cm & 98cm & 98$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2401$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 42cm & 84cm & 84$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1764$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 4cm & 8cm & 8$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 16$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 41.5cm & 83cm & 83$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1722.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 41cm & & &  \\ \hline 14cm & & & \\ \hline & 19cm & & \\ \hline & 74cm & & \\ \hline & &26$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 24$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 1936$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 361$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 41cm & 82cm & 82$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1681$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 14cm & 28cm & 28$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 196$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 9.5cm & 19cm & 19$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 90.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 37cm & 74cm & 74$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1369$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 13cm & 26cm & 26$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 169$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 12cm & 24cm & 24$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 144$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 44cm & 88cm & 88$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1936$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 19cm & 38cm & 38$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 361$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 46.5cm & & &  \\ \hline 26.5cm & & & \\ \hline & 63cm & & \\ \hline & 77cm & & \\ \hline & &3$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 5$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 600.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 1369$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 46.5cm & 93cm & 93$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2162.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 26.5cm & 53cm & 53$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 702.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 31.5cm & 63cm & 63$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 992.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 38.5cm & 77cm & 77$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1482.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 1.5cm & 3cm & 3$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 2.5cm & 5cm & 5$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 6.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 24.5cm & 49cm & 49$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 600.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 37cm & 74cm & 74$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1369$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 45cm & & &  \\ \hline 13.5cm & & & \\ \hline & 39cm & & \\ \hline & 42cm & & \\ \hline & &4$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 48$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 961$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 552.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 45cm & 90cm & 90$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2025$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 13.5cm & 27cm & 27$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 182.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 19.5cm & 39cm & 39$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 380.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 21cm & 42cm & 42$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 441$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 2cm & 4cm & 4$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 4$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 24cm & 48cm & 48$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 576$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 31cm & 62cm & 62$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 961$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 23.5cm & 47cm & 47$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 552.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 22cm & & &  \\ \hline 30cm & & & \\ \hline & 17cm & & \\ \hline & 30cm & & \\ \hline & &18$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 29$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 650.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 36$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 22cm & 44cm & 44$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 484$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 30cm & 60cm & 60$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 900$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 8.5cm & 17cm & 17$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 72.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 15cm & 30cm & 30$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 225$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 9cm & 18cm & 18$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 81$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 14.5cm & 29cm & 29$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 210.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 25.5cm & 51cm & 51$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 650.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 6cm & 12cm & 12$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 36$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 28.5cm & & &  \\ \hline 9.5cm & & & \\ \hline & 52cm & & \\ \hline & 10cm & & \\ \hline & &28$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 35$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 156.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 72.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 28.5cm & 57cm & 57$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 812.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 9.5cm & 19cm & 19$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 90.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 26cm & 52cm & 52$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 676$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 5cm & 10cm & 10$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 14cm & 28cm & 28$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 196$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 17.5cm & 35cm & 35$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 306.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 12.5cm & 25cm & 25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 156.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 8.5cm & 17cm & 17$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 72.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 21.5cm & & &  \\ \hline 5.5cm & & & \\ \hline & 53cm & & \\ \hline & 30cm & & \\ \hline & &85$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 38$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 2025$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 2070.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 21.5cm & 43cm & 43$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 462.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 5.5cm & 11cm & 11$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 30.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 26.5cm & 53cm & 53$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 702.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 15cm & 30cm & 30$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 225$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 42.5cm & 85cm & 85$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1806.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 19cm & 38cm & 38$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 361$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 45cm & 90cm & 90$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2025$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 45.5cm & 91cm & 91$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2070.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 36cm & & &  \\ \hline 13.5cm & & & \\ \hline & 11cm & & \\ \hline & 36cm & & \\ \hline & &82$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 86$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 756.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 361$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 36cm & 72cm & 72$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1296$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 13.5cm & 27cm & 27$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 182.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 5.5cm & 11cm & 11$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 30.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 18cm & 36cm & 36$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 324$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 41cm & 82cm & 82$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1681$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 43cm & 86cm & 86$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1849$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 27.5cm & 55cm & 55$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 756.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 19cm & 38cm & 38$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 361$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 35cm & & &  \\ \hline 11cm & & & \\ \hline & 17cm & & \\ \hline & 32cm & & \\ \hline & &58$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 47$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 2162.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 42.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 35cm & 70cm & 70$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1225$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 11cm & 22cm & 22$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 121$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 8.5cm & 17cm & 17$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 72.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 16cm & 32cm & 32$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 256$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 29cm & 58cm & 58$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 841$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 23.5cm & 47cm & 47$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 552.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 46.5cm & 93cm & 93$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2162.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 6.5cm & 13cm & 13$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 42.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 32.5cm & & &  \\ \hline 29.5cm & & & \\ \hline & 27cm & & \\ \hline & 93cm & & \\ \hline & &37$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 68$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 1980.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 676$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 32.5cm & 65cm & 65$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1056.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 29.5cm & 59cm & 59$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 870.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 13.5cm & 27cm & 27$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 182.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 46.5cm & 93cm & 93$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2162.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 18.5cm & 37cm & 37$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 342.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 34cm & 68cm & 68$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1156$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 44.5cm & 89cm & 89$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1980.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 26cm & 52cm & 52$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 676$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 24cm & & &  \\ \hline 44cm & & & \\ \hline & 27cm & & \\ \hline & 60cm & & \\ \hline & &29$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 20$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 1560.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 4$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 24cm & 48cm & 48$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 576$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 44cm & 88cm & 88$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1936$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 13.5cm & 27cm & 27$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 182.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 30cm & 60cm & 60$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 900$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 14.5cm & 29cm & 29$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 210.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 10cm & 20cm & 20$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 100$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 39.5cm & 79cm & 79$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1560.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 2cm & 4cm & 4$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 4$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 49cm & & &  \\ \hline 42.5cm & & & \\ \hline & 18cm & & \\ \hline & 16cm & & \\ \hline & &28$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 97$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 930.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 1681$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 49cm & 98cm & 98$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2401$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 42.5cm & 85cm & 85$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1806.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 9cm & 18cm & 18$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 81$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 8cm & 16cm & 16$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 64$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 14cm & 28cm & 28$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 196$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 48.5cm & 97cm & 97$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2352.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 30.5cm & 61cm & 61$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 930.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 41cm & 82cm & 82$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1681$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 48.5cm & & &  \\ \hline 7cm & & & \\ \hline & 28cm & & \\ \hline & 89cm & & \\ \hline & &53$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 13$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 361$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 306.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+ 		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 48.5cm & 97cm & 97$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2352.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 7cm & 14cm & 14$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 49$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 14cm & 28cm & 28$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 196$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 44.5cm & 89cm & 89$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1980.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 26.5cm & 53cm & 53$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 702.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 6.5cm & 13cm & 13$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 42.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 19cm & 38cm & 38$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 361$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 17.5cm & 35cm & 35$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 306.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 31cm & & &  \\ \hline 15cm & & & \\ \hline & 71cm & & \\ \hline & 67cm & & \\ \hline & &40$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 95$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 900$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 306.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 31cm & 62cm & 62$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 961$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 15cm & 30cm & 30$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 225$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 35.5cm & 71cm & 71$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1260.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 33.5cm & 67cm & 67$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1122.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 20cm & 40cm & 40$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 400$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 47.5cm & 95cm & 95$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2256.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 30cm & 60cm & 60$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 900$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 17.5cm & 35cm & 35$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 306.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 14.5cm & & &  \\ \hline 43.5cm & & & \\ \hline & 45cm & & \\ \hline & 97cm & & \\ \hline & &80$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 28$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 729$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 132.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 14.5cm & 29cm & 29$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 210.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 43.5cm & 87cm & 87$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1892.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 22.5cm & 45cm & 45$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 506.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 48.5cm & 97cm & 97$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2352.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 40cm & 80cm & 80$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1600$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 14cm & 28cm & 28$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 196$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 27cm & 54cm & 54$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 729$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 11.5cm & 23cm & 23$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 132.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 46.5cm & & &  \\ \hline 2cm & & & \\ \hline & 27cm & & \\ \hline & 41cm & & \\ \hline & &98$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 80$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 240.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 46.5cm & 93cm & 93$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2162.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 2cm & 4cm & 4$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 4$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 13.5cm & 27cm & 27$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 182.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 20.5cm & 41cm & 41$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 420.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 49cm & 98cm & 98$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2401$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 40cm & 80cm & 80$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1600$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 5cm & 10cm & 10$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 15.5cm & 31cm & 31$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 240.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 41.5cm & & &  \\ \hline 11.5cm & & & \\ \hline & 98cm & & \\ \hline & 90cm & & \\ \hline & &57$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 63$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 36$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 1190.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 41.5cm & 83cm & 83$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1722.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 11.5cm & 23cm & 23$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 132.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 49cm & 98cm & 98$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2401$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 45cm & 90cm & 90$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2025$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 28.5cm & 57cm & 57$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 812.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 31.5cm & 63cm & 63$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 992.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 6cm & 12cm & 12$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 36$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 34.5cm & 69cm & 69$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1190.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 49cm & & &  \\ \hline 33.5cm & & & \\ \hline & 11cm & & \\ \hline & 92cm & & \\ \hline & &79$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 43$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 156.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 600.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 49cm & 98cm & 98$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2401$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 33.5cm & 67cm & 67$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1122.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 5.5cm & 11cm & 11$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 30.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 46cm & 92cm & 92$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2116$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 39.5cm & 79cm & 79$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1560.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 21.5cm & 43cm & 43$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 462.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 12.5cm & 25cm & 25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 156.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 24.5cm & 49cm & 49$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 600.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 4.5cm & & &  \\ \hline 25.5cm & & & \\ \hline & 78cm & & \\ \hline & 63cm & & \\ \hline & &100$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 74$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 729$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 6.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 4.5cm & 9cm & 9$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 20.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 25.5cm & 51cm & 51$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 650.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 39cm & 78cm & 78$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1521$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 31.5cm & 63cm & 63$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 992.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 50cm & 100cm & 100$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2500$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 37cm & 74cm & 74$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1369$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 27cm & 54cm & 54$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 729$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 2.5cm & 5cm & 5$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 6.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 10.5cm & & &  \\ \hline 1.5cm & & & \\ \hline & 17cm & & \\ \hline & 92cm & & \\ \hline & &60$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 83$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 841$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 2256.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 10.5cm & 21cm & 21$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 110.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 1.5cm & 3cm & 3$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 8.5cm & 17cm & 17$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 72.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 46cm & 92cm & 92$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2116$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 30cm & 60cm & 60$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 900$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 41.5cm & 83cm & 83$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1722.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 29cm & 58cm & 58$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 841$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 47.5cm & 95cm & 95$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2256.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 22.5cm & & &  \\ \hline 23.5cm & & & \\ \hline & 23cm & & \\ \hline & 12cm & & \\ \hline & &65$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 14$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 650.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 2025$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 22.5cm & 45cm & 45$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 506.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 23.5cm & 47cm & 47$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 552.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 11.5cm & 23cm & 23$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 132.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 6cm & 12cm & 12$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 36$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 32.5cm & 65cm & 65$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1056.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 7cm & 14cm & 14$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 49$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 25.5cm & 51cm & 51$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 650.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 45cm & 90cm & 90$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 2025$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 29cm & & &  \\ \hline 21cm & & & \\ \hline & 46cm & & \\ \hline & 33cm & & \\ \hline & &56$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 83$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 132.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 196$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 29cm & 58cm & 58$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 841$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 21cm & 42cm & 42$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 441$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 23cm & 46cm & 46$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 529$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 16.5cm & 33cm & 33$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 272.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 28cm & 56cm & 56$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 784$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 41.5cm & 83cm & 83$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1722.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 11.5cm & 23cm & 23$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 132.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 14cm & 28cm & 28$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 196$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 31.5cm & & &  \\ \hline 18.5cm & & & \\ \hline & 58cm & & \\ \hline & 34cm & & \\ \hline & &53$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 46$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 30.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 56.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 31.5cm & 63cm & 63$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 992.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 18.5cm & 37cm & 37$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 342.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 29cm & 58cm & 58$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 841$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 17cm & 34cm & 34$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 289$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 26.5cm & 53cm & 53$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 702.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 23cm & 46cm & 46$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 529$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 5.5cm & 11cm & 11$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 30.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 7.5cm & 15cm & 15$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 56.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 38.5cm & & &  \\ \hline 42cm & & & \\ \hline & 88cm & & \\ \hline & 8cm & & \\ \hline & &39$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 62$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 756.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 1$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que1}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 38.5cm & 77cm & 77$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1482.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 42cm & 84cm & 84$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1764$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 44cm & 88cm & 88$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1936$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 4cm & 8cm & 8$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 16$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 19.5cm & 39cm & 39$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 380.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 31cm & 62cm & 62$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 961$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 27.5cm & 55cm & 55$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 756.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 1cm & 2cm & 2$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 35.5cm & & &  \\ \hline 40.5cm & & & \\ \hline & 25cm & & \\ \hline & 62cm & & \\ \hline & &12$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & 88$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & \\ \hline & & & 210.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline & & & 812.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill\\[0.3cm]
+	\end{beamercolorbox}
+\end{frame}
+\begin{frame}[shrink=19,fragile]
+	\begin{beamercolorbox}[rounded=true, left, shadow=true,wd=14.8cm]{que2}
+		Copy and complete this table \\[0.3cm] \hfill\renewcommand{\arraystretch}{1.2}\begin{tabular}{ | p{3cm} | p{3cm} | p{3cm} | p{3cm} |} \hline Radius & Diameter & Circumference & Area \\ \specialrule{1pt}{0pt}{0pt} 35.5cm & 71cm & 71$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1260.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 40.5cm & 81cm & 81$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1640.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 12.5cm & 25cm & 25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 156.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 31cm & 62cm & 62$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 961$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 6cm & 12cm & 12$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 36$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 44cm & 88cm & 88$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 1936$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 14.5cm & 29cm & 29$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 210.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline 28.5cm & 57cm & 57$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm & 812.25$\mathlarger{\mathlarger{\mathlarger{\pi}}}$cm$^{2}$ \\ \hline \end{tabular}\hfill
+	\end{beamercolorbox}
+\end{frame}
+
+\end{document}

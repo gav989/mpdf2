@@ -1,0 +1,150 @@
+\documentclass[13.5pt, varwidth=true]{beamer} 
+\usepackage[scaled=1]{helvet}
+\usepackage[T1]{fontenc}
+\usepackage{sansmath}
+\sansmath
+\renewcommand\familydefault{\sfdefault}
+%\DeclareMathSizes{11}{19}{13}{9}   % For size 11 text
+\usefonttheme{professionalfonts}
+\usepackage{colortbl}
+\usepackage{xcolor}
+\usepackage{siunitx}
+\usepackage{relsize}
+\sisetup{detect-all}
+\definecolor{que1}{HTML}{FFC5FA}
+\definecolor{que2}{HTML}{C6D7FD}
+\definecolor{bgre}{HTML}{DCDCDC}
+\definecolor{tgre}{HTML}{BCBCBC}
+\definecolor{ared}{HTML}{850000}
+\setbeamercolor{background canvas}{bg=bgre}
+\usetheme{CambridgeUS}
+\usecolortheme{beetle}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}{\centerline{\textcolor{tgre}{This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License}}}
+\usepackage{graphicx}
+\setbeamercolor*{palette tertiary}{bg=que1}
+\setbeamercolor*{palette primary}{bg=que2}
+\begin{document}
+\date{}
+
+\section[topic]{what is this bit?}
+\subsection[title]{and this?}
+\arrayrulecolor{bgre}
+\arrayrulewidth=1pt
+\frame[shrink=19]{
+	hint\\[.3cm]
+	\centering
+	\begin{tabular}{p{.5cm} | p{5.8cm} p{.1cm} p{.5cm} | p{5.8cm}}
+		\rowcolor{que1}\textbf{1} & q1  & \cellcolor{bgre} & \textbf{7} & q7 \\
+		\rowcolor{que1} & \multicolumn{1}{r}{\textcolor{ared}{}} & \cellcolor{bgre}  &  & \multicolumn{0}{r}{\textcolor{ared}{}}\\ \hline
+		\rowcolor{que2}\textbf{2} & q2  & \cellcolor{bgre} & \textbf{8} & q8 \\ 
+		\rowcolor{que2} & \multicolumn{1}{r}{\textcolor{ared}{}} & \cellcolor{bgre}  &  & \multicolumn{1}{r}{\textcolor{ared}{}}\\ \hline
+		\rowcolor{que1}\textbf{3} & q3  & \cellcolor{bgre} & \textbf{9} & q9 \\ 
+		\rowcolor{que1} & \multicolumn{1}{r}{\textcolor{ared}{}} & \cellcolor{bgre}  &  & \multicolumn{1}{r}{\textcolor{ared}{}}\\ \hline
+		\rowcolor{que2}\textbf{4} & q4  & \cellcolor{bgre} & \textbf{10} & q10 \\ 
+		\rowcolor{que2} & \multicolumn{1}{r}{\textcolor{ared}{}} & \cellcolor{bgre}  &  & \multicolumn{1}{r}{\textcolor{ared}{}}\\ \hline
+		\rowcolor{que1}\textbf{5} & q5  & \cellcolor{bgre} & \textbf{11} & q11 \\ 
+		\rowcolor{que1} & \multicolumn{1}{r}{\textcolor{ared}{}} & \cellcolor{bgre}  &  & \multicolumn{1}{r}{\textcolor{ared}{}}\\ \hline
+		\rowcolor{que2}\textbf{6} & q6  & \cellcolor{bgre} & \textbf{12} & q12 \\ 
+		\rowcolor{que2} & \multicolumn{1}{r}{\textcolor{ared}{}} & \cellcolor{bgre}  &  & \multicolumn{1}{r}{\textcolor{ared}{}}\\ \hline
+	\end{tabular}
+
+
+}
+
+\frame[shrink=19]{
+	hint\\[.3cm]
+	\centering
+	\begin{tabular}{p{.5cm} | p{5.8cm} p{.1cm} p{.5cm} | p{5.8cm}}
+		\rowcolor{que1}\textbf{1} & q1  & \cellcolor{bgre} & \textbf{7} & q7 \\ 
+		\rowcolor{que1} & \multicolumn{1}{r}{\textcolor{ared}{a1 }} & \cellcolor{bgre} & & \multicolumn{1}{r}{\textcolor{ared}{a7 }}\\ \hline
+		\rowcolor{que2}\textbf{2} & q2  & \cellcolor{bgre} & \textbf{8} & q8 \\ 
+		\rowcolor{que2} & \multicolumn{1}{r}{\textcolor{ared}{a2 }} & \cellcolor{bgre}  &  & \multicolumn{1}{r}{\textcolor{ared}{a8 }}\\ \hline
+		\rowcolor{que1}\textbf{3} & q3  & \cellcolor{bgre} & \textbf{9} & q9 \\ 
+		\rowcolor{que1} & \multicolumn{1}{r}{\textcolor{ared}{a3 }} & \cellcolor{bgre}  &  & \multicolumn{1}{r}{\textcolor{ared}{a9 }}\\ \hline
+		\rowcolor{que2}\textbf{4} & q4  & \cellcolor{bgre} & \textbf{10} & q10 \\ 
+		\rowcolor{que2} & \multicolumn{1}{r}{\textcolor{ared}{a4 }} & \cellcolor{bgre}  &  & \multicolumn{1}{r}{\textcolor{ared}{a10 }}\\ \hline
+		\rowcolor{que1}\textbf{5} & q5  & \cellcolor{bgre} & \textbf{11} & q11 \\ 
+		\rowcolor{que1} & \multicolumn{1}{r}{\textcolor{ared}{a5 }} & \cellcolor{bgre}  &  & \multicolumn{1}{r}{\textcolor{ared}{a11 }}\\ \hline
+		\rowcolor{que2}\textbf{6} & q6  & \cellcolor{bgre} & \textbf{12} & q12 \\ 
+		\rowcolor{que2} & \multicolumn{1}{r}{\textcolor{ared}{a6 }} & \cellcolor{bgre}  &  & \multicolumn{1}{r}{\textcolor{ared}{a12 }}\\ \hline
+	\end{tabular}
+}
+
+\frame[shrink=19]{
+	hint\\[.3cm]
+	\centering
+	\begin{tabular}{p{.5cm} | p{5.8cm} p{.1cm} p{.5cm} | p{5.8cm}}
+		\rowcolor{que1}\textbf{1} & q13  & \cellcolor{bgre} & \textbf{7} & q19 \\
+		\rowcolor{que1} & \multicolumn{1}{r}{\textcolor{ared}{}} & \cellcolor{bgre}  &  & \multicolumn{0}{r}{\textcolor{ared}{}}\\ \hline
+		\rowcolor{que2}\textbf{2} & q14  & \cellcolor{bgre} & \textbf{8} & q20 \\ 
+		\rowcolor{que2} & \multicolumn{1}{r}{\textcolor{ared}{}} & \cellcolor{bgre}  &  & \multicolumn{1}{r}{\textcolor{ared}{}}\\ \hline
+		\rowcolor{que1}\textbf{3} & q15  & \cellcolor{bgre} & \textbf{9} & q21 \\ 
+		\rowcolor{que1} & \multicolumn{1}{r}{\textcolor{ared}{}} & \cellcolor{bgre}  &  & \multicolumn{1}{r}{\textcolor{ared}{}}\\ \hline
+		\rowcolor{que2}\textbf{4} & q16  & \cellcolor{bgre} & \textbf{10} & q22 \\ 
+		\rowcolor{que2} & \multicolumn{1}{r}{\textcolor{ared}{}} & \cellcolor{bgre}  &  & \multicolumn{1}{r}{\textcolor{ared}{}}\\ \hline
+		\rowcolor{que1}\textbf{5} & q17  & \cellcolor{bgre} & \textbf{11} & q23 \\ 
+		\rowcolor{que1} & \multicolumn{1}{r}{\textcolor{ared}{}} & \cellcolor{bgre}  &  & \multicolumn{1}{r}{\textcolor{ared}{}}\\ \hline
+		\rowcolor{que2}\textbf{6} & q18  & \cellcolor{bgre} & \textbf{12} & q24 \\ 
+		\rowcolor{que2} & \multicolumn{1}{r}{\textcolor{ared}{}} & \cellcolor{bgre}  &  & \multicolumn{1}{r}{\textcolor{ared}{}}\\ \hline
+	\end{tabular}
+}
+
+\frame[shrink=19]{
+	hint\\[.3cm]
+	\centering
+	\begin{tabular}{p{.5cm} | p{5.8cm} p{.1cm} p{.5cm} | p{5.8cm}}
+		\rowcolor{que1}\textbf{1} & q13 & \cellcolor{bgre} & \textbf{7} & q19 \\ 
+		\rowcolor{que1} & \multicolumn{1}{r}{\textcolor{ared}{a13 }} & \cellcolor{bgre} & & \multicolumn{1}{r}{\textcolor{ared}{a19 }}\\ \hline
+		\rowcolor{que2}\textbf{2} & q14  & \cellcolor{bgre} & \textbf{8} & q20 \\ 
+		\rowcolor{que2} & \multicolumn{1}{r}{\textcolor{ared}{a14 }} & \cellcolor{bgre}  &  & \multicolumn{1}{r}{\textcolor{ared}{a20 }}\\ \hline
+		\rowcolor{que1}\textbf{3} & q15  & \cellcolor{bgre} & \textbf{9} & q21 \\ 
+		\rowcolor{que1} & \multicolumn{1}{r}{\textcolor{ared}{a15 }} & \cellcolor{bgre}  &  & \multicolumn{1}{r}{\textcolor{ared}{a21 }}\\ \hline
+		\rowcolor{que2}\textbf{4} & q16  & \cellcolor{bgre} & \textbf{10} & q22 \\ 
+		\rowcolor{que2} & \multicolumn{1}{r}{\textcolor{ared}{a16 }} & \cellcolor{bgre}  &  & \multicolumn{1}{r}{\textcolor{ared}{a22 }}\\ \hline
+		\rowcolor{que1}\textbf{5} & q17  & \cellcolor{bgre} & \textbf{11} & q23 \\ 
+		\rowcolor{que1} & \multicolumn{1}{r}{\textcolor{ared}{a17 }} & \cellcolor{bgre}  &  & \multicolumn{1}{r}{\textcolor{ared}{a23 }}\\ \hline
+		\rowcolor{que2}\textbf{6} & q18  & \cellcolor{bgre} & \textbf{12} & q24 \\ 
+		\rowcolor{que2} & \multicolumn{1}{r}{\textcolor{ared}{a18 }} & \cellcolor{bgre}  &  & \multicolumn{1}{r}{\textcolor{ared}{a24 }}\\ \hline
+	\end{tabular}
+}
+
+\frame[shrink=19]{
+	hint\\[.3cm]
+	\centering
+	\begin{tabular}{p{.5cm} | p{5.8cm} p{.1cm} p{.5cm} | p{5.8cm}}
+		\rowcolor{que1}\textbf{1} & q25  & \cellcolor{bgre} & \textbf{7} & q31 \\
+		\rowcolor{que1} & \multicolumn{1}{r}{\textcolor{ared}{}} & \cellcolor{bgre}  &  & \multicolumn{0}{r}{\textcolor{ared}{}}\\ \hline
+		\rowcolor{que2}\textbf{2} & q26  & \cellcolor{bgre} & \textbf{8} & q32 \\ 
+		\rowcolor{que2} & \multicolumn{1}{r}{\textcolor{ared}{}} & \cellcolor{bgre}  &  & \multicolumn{1}{r}{\textcolor{ared}{}}\\ \hline
+		\rowcolor{que1}\textbf{3} & q27  & \cellcolor{bgre} & \textbf{9} & q33 \\ 
+		\rowcolor{que1} & \multicolumn{1}{r}{\textcolor{ared}{}} & \cellcolor{bgre}  &  & \multicolumn{1}{r}{\textcolor{ared}{}}\\ \hline
+		\rowcolor{que2}\textbf{4} & q28  & \cellcolor{bgre} & \textbf{10} & q34 \\ 
+		\rowcolor{que2} & \multicolumn{1}{r}{\textcolor{ared}{}} & \cellcolor{bgre}  &  & \multicolumn{1}{r}{\textcolor{ared}{}}\\ \hline
+		\rowcolor{que1}\textbf{5} & q29  & \cellcolor{bgre} & \textbf{11} & q35 \\ 
+		\rowcolor{que1} & \multicolumn{1}{r}{\textcolor{ared}{}} & \cellcolor{bgre}  &  & \multicolumn{1}{r}{\textcolor{ared}{}}\\ \hline
+		\rowcolor{que2}\textbf{6} & q30  & \cellcolor{bgre} & \textbf{12} & q36 \\ 
+		\rowcolor{que2} & \multicolumn{1}{r}{\textcolor{ared}{}} & \cellcolor{bgre}  &  & \multicolumn{1}{r}{\textcolor{ared}{}}\\ \hline
+	\end{tabular}
+}
+
+\frame[shrink=19]{
+	hint\\[.3cm]
+	\centering
+	\begin{tabular}{p{.5cm} | p{5.8cm} p{.1cm} p{.5cm} | p{5.8cm}}
+		\rowcolor{que1}\textbf{1} & q25  & \cellcolor{bgre} & \textbf{7} & q31 \\ 
+		\rowcolor{que1} & \multicolumn{1}{r}{\textcolor{ared}{a25 }} & \cellcolor{bgre} & & \multicolumn{1}{r}{\textcolor{ared}{a31 }}\\ \hline
+		\rowcolor{que2}\textbf{2} & q26  & \cellcolor{bgre} & \textbf{8} & q32 \\ 
+		\rowcolor{que2} & \multicolumn{1}{r}{\textcolor{ared}{a26 }} & \cellcolor{bgre}  &  & \multicolumn{1}{r}{\textcolor{ared}{a32 }}\\ \hline
+		\rowcolor{que1}\textbf{3} & q27  & \cellcolor{bgre} & \textbf{9} & q33 \\ 
+		\rowcolor{que1} & \multicolumn{1}{r}{\textcolor{ared}{a27 }} & \cellcolor{bgre}  &  & \multicolumn{1}{r}{\textcolor{ared}{a33 }}\\ \hline
+		\rowcolor{que2}\textbf{4} & q28  & \cellcolor{bgre} & \textbf{10} & q34 \\ 
+		\rowcolor{que2} & \multicolumn{1}{r}{\textcolor{ared}{a28 }} & \cellcolor{bgre}  &  & \multicolumn{1}{r}{\textcolor{ared}{a34 }}\\ \hline
+		\rowcolor{que1}\textbf{5} & q29  & \cellcolor{bgre} & \textbf{11} & q35 \\ 
+		\rowcolor{que1} & \multicolumn{1}{r}{\textcolor{ared}{a29 }} & \cellcolor{bgre}  &  & \multicolumn{1}{r}{\textcolor{ared}{a35 }}\\ \hline
+		\rowcolor{que2}\textbf{6} & q30  & \cellcolor{bgre} & \textbf{12} & q36 \\ 
+		\rowcolor{que2} & \multicolumn{1}{r}{\textcolor{ared}{a30 }} & \cellcolor{bgre}  &  & \multicolumn{1}{r}{\textcolor{ared}{a36 }}\\ \hline
+	\end{tabular}
+}
+
+\end{document}

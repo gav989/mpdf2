@@ -1,0 +1,58 @@
+install arch and add user etc.
+
+update and install following packages:
+
+python
+vim
+unzip
+zip
+texlive-most
+gnuplot
+terminus-font
+lynx
+git
+ttf-liberation
+ttf-dejavu
+
+put the following in /etc/vconsole.conf
+KEYMAP=uk
+font=ter-112n
+
+Install this: https://github.com/andreafabrizi/Dropbox-Uploader
+(put sd card in main machine to paste access token thing)
+
+
+TRY CRON
+
+
+
+
+put timer/service files in ~/.config/systemd/user/
+reboot
+test service with:
+	systemctl --user start boardpdf.service
+start timer with:
+	systemctl --user start boardpdf.timer
+make it permanent with:
+	systemctl --user enable boardpdf.timer
+
+
+
+
+github instead of dropbox?
+
+git clone https://github.com/gav989/boardpdf
+extract boardpdf/scripts.zip to pwd
+run all to create boardpdf.zip
+copy boardpdf.zip into boardpdf
+cd into boardpdf
+git add src
+git commit -m "uploading new files"
+git push origin master
+
+asks for password?
+
+
+
+
+

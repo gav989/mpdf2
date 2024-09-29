@@ -1,0 +1,49 @@
+
+\frame{%%%%%%%%%%%%%%%%%%%%%%%%Questions%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{borderbox}[left=3.5mm,right=3.5mm,top=1mm,bottom=1mm,before skip = 0.2cm,colback=white,height=9.4cm,valign=top]{tttitle} hint
+	\begin{columns}
+		\column{0.33\textwidth}
+		\begin{questionbox}[left=1mm,right=0mm,top=0mm,bottom=0mm,before skip = 0.05cm,colbacktitle=myred2!300!, colback=myred2!30!,colframe=myred2!300!,boxed title style={colback=myred2!300!}]{\contour{myfg}{1}}{q1 }\end{questionbox}
+		\column{0.33\textwidth}
+		\begin{questionbox}[left=1mm,right=0mm,top=0mm,bottom=0mm,before skip = 0.05cm,colbacktitle=myorange!300!, colback=myorange!30!,colframe=myorange!300!,boxed title style={colback=myorange!300!}]{\contour{myfg}{2}}{q2 }\end{questionbox}
+		\column{0.33\textwidth}
+		\begin{questionbox}[left=1mm,right=0mm,top=0mm,bottom=0mm,before skip = 0.05cm,colbacktitle=myyellow!300!, colback=myyellow!30!,colframe=myyellow!300!,boxed title style={colback=myyellow!300!}]{\contour{myfg}{3}}{q3 }\end{questionbox}
+	\end{columns}
+	\begin{columns}
+		\column{0.5085\textwidth}
+		\begin{questionbox}[left=1mm,right=0mm,top=0mm,bottom=0mm,before skip = 0.05cm,colbacktitle=mygreen!300!, colback=mygreen!30!,colframe=mygreen!300!,boxed title style={colback=mygreen!300!}]{\contour{myfg}{4}}{q4 }\end{questionbox}
+		\column{0.5085\textwidth}
+		\begin{questionbox}[left=1mm,right=0mm,top=0mm,bottom=0mm,before skip = 0.05cm,colbacktitle=myblue!300!, colback=myblue!30!,colframe=myblue!300!,boxed title style={colback=myblue!300!}]{\contour{myfg}{5}}{q5 }\end{questionbox}
+	\end{columns}
+	\begin{columns}
+		\column{1.0432\textwidth}
+		\begin{questionbox}[left=1mm,right=0mm,top=0mm,bottom=0mm,before skip = 0.05cm,colbacktitle=myviolet!300!, colback=myviolet!30!,colframe=myviolet!300!,boxed title style={colback=myviolet!300!}]{\contour{myfg}{6}}{q6 }\end{questionbox}
+	\end{columns}
+	\end{borderbox}
+}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Questions%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{%%%%%%%%%%%%%%%%%%%%%%%%Answers%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{borderbox}[left=3.5mm,right=3.5mm,top=1mm,bottom=1mm,before skip = 0.2cm,colback=white,height=9.4cm,valign=top]{tttitle - Answers} hint
+	\begin{columns}
+		\column{0.33\textwidth}
+		\begin{questionbox}[left=1mm,right=0mm,top=0mm,bottom=0mm,before skip = 0.05cm,colbacktitle=myred2!300!, colback=myred2!30!,colframe=myred2!300!,boxed title style={colback=myred2!300!}]{\contour{myfg}{1}}{\textcolor{myred}{a1 }}\end{questionbox}
+		\column{0.33\textwidth}
+		\begin{questionbox}[left=1mm,right=0mm,top=0mm,bottom=0mm,before skip = 0.05cm,colbacktitle=myorange!300!, colback=myorange!30!,colframe=myorange!300!,boxed title style={colback=myorange!300!}]{\contour{myfg}{2}}{\textcolor{myred}{a2 }}\end{questionbox}
+		\column{0.33\textwidth}
+		\begin{questionbox}[left=1mm,right=0mm,top=0mm,bottom=0mm,before skip = 0.05cm,colbacktitle=myyellow!300!, colback=myyellow!30!,colframe=myyellow!300!,boxed title style={colback=myyellow!300!}]{\contour{myfg}{3}}{\textcolor{myred}{a3 }}\end{questionbox}
+	\end{columns}
+	\begin{columns}
+		\column{0.5085\textwidth}
+		\begin{questionbox}[left=1mm,right=0mm,top=0mm,bottom=0mm,before skip = 0.05cm,colbacktitle=mygreen!300!, colback=mygreen!30!,colframe=mygreen!300!,boxed title style={colback=mygreen!300!}]{\contour{myfg}{4}}{\textcolor{myred}{a4 }}\end{questionbox}
+		\column{0.5085\textwidth}
+		\begin{questionbox}[left=1mm,right=0mm,top=0mm,bottom=0mm,before skip = 0.05cm,colbacktitle=myblue!300!, colback=myblue!30!,colframe=myblue!300!,boxed title style={colback=myblue!300!}]{\contour{myfg}{5}}{\textcolor{myred}{a5 }}\end{questionbox}
+	\end{columns}
+	\begin{columns}
+		\column{1.0432\textwidth}
+		\begin{questionbox}[left=1mm,right=0mm,top=0mm,bottom=0mm,before skip = 0.05cm,colbacktitle=myviolet!300!, colback=myviolet!30!,colframe=myviolet!300!,boxed title style={colback=myviolet!300!}]{\contour{myfg}{6}}{\textcolor{myred}{a6 }}\end{questionbox}
+	\end{columns}
+	\end{borderbox}
+	\CopyrightNotice{}
+}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Answers%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+	

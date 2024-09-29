@@ -1,0 +1,30 @@
+\documentclass[13.5pt, varwidth=true]{beamer} 
+\usepackage[scaled=1]{helvet}
+\usepackage[T1]{fontenc}
+\usefonttheme{professionalfonts}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+\definecolor{fore}{HTML}{0E162D}
+\definecolor{back}{HTML}{F1E9D2}
+\setbeamercolor{background canvas}{bg=back}
+\usetheme{CambridgeUS}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}{\centerline{\textcolor{fore}{This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License}}}
+\setbeamercolor*{palette tertiary}{fg=fore,bg=back}
+\setbeamercolor*{palette primary}{fg=fore,bg=back}
+\begin{document}
+\date{}
+
+\section[topic]{what is this bit?}
+\subsection[title]{and this?}
+
+\begin{frame}[shrink=19,fragile]
+\color{fore}
+	hint\\[0.5cm]
+	\href{run:./folder/Addition.pdf}{Addition File} \\
+	\textcolor{red}{\href{run:./folder/1000 Multiplication.pdf}{1000 Multiplication File}}
+\end{frame}
+
+
+\end{document}

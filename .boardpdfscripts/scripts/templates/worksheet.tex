@@ -1,0 +1,31 @@
+\documentclass[11pt, varwidth=true]{article} 
+\usepackage[a4paper,portrait,top=1cm,bottom=1cm,left=1cm,right=1cm]{geometry}
+\usepackage[scaled=1]{helvet}
+\usepackage[T1]{fontenc}
+\usepackage{sansmath}
+\usepackage{amsmath}
+\usepackage{relsize}
+\usepackage{siunitx}
+\sisetup{detect-all}
+\sansmath
+\renewcommand\familydefault{\sfdefault} 
+\usepackage[none]{hyphenat}
+\usepackage{array}
+\usepackage{multicol}
+\usepackage{enumitem}
+\setlist[enumerate]{itemsep=1mm}
+\usepackage[overlay,absolute]{textpos}
+\newcommand\PlaceText[3]{%
+\begin{textblock*}{10in}(#1,#2)  %% change width of box from 10in as you wish
+#3
+\end{textblock*}
+}%
+\textblockorigin{0mm}{0mm}   %% Default origin top left corner and it can be changed in this line
+
+\begin{document}
+\newcommand{\mydeg}{\SI{}{\SIUnitSymbolDegree}}
+{\PlaceText{53.5mm}{295mm}{\tiny{This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.}}
+\pagestyle{empty}
+
+\centering \underline{title}\\
+\begin{multicols*}{2}
