@@ -17,22 +17,18 @@ content = content + generatecontentspage(chapter)
 
 
 title = "Division"
-hint = "Write down the first five numbers in these times tables:"
-section = "Two Digit Times Tables"
-description = "~"
+hint = "~"
+section = "Decimal Division 2"
+description = "Divisor is a decimal"
 examples = "~"
 titlepage = generatetitlepage(section,description,examples)
 content = content + titlepage
 ###
-frametext = generatetemplate(4,9,4,1,100,100)
-tempquestions = decimaldivision1(9,0)
-#tempquestions += decimaldivision2(9,0)
-#tempquestions += decimaldivision3(9,0)
-#tempquestions += decimaldivision4(9,0)
-tempquestions += divisionbydecimal(9,0)
+frametext = generatetemplate(4,9,bycolumn,0,100,100)
+tempquestions = divisionbydecimal(9,0)
+tempquestions += decimaldivision3(9,0)
 tempquestions += divisionbydecimal2(9,0)
-
-
+tempquestions += decimaldivision4(9,0)
 frametext = frametext.replace("hint",hint)
 frametext = frametext.replace("tttitle",title)
 for i in range(0, int(len(tempquestions)/2)):
