@@ -5,7 +5,7 @@
 \definecolor{myfg}{HTML}{0E162D}
 \definecolor{fade}{HTML}{c5c9d3}
 \definecolor{mybg}{HTML}{F1E9D2}
-\definecolor{myred}{HTML}{380202}
+\definecolor{myred}{HTML}{860202}
 \definecolor{myblue}{HTML}{d2edf1}
 \definecolor{mypink}{HTML}{f1d2f1}
 \definecolor{mygreen}{HTML}{d4f1d2}
@@ -15,13 +15,20 @@
 \definecolor{myindigo}{HTML}{ded2f1}
 \definecolor{myred2}{HTML}{f1d2d2}
 
-% This stuff is for the copyright thing
+% This stuff is for the copyright thing and return arrow
 \usepackage[overlay,absolute]{textpos}
 \usepackage{ccicons}
 \textblockorigin{-5mm}{0mm}   %% Default origin top left corner and it can be changed in this line
 \newcommand\CopyrightNotice[0]{%
 \begin{textblock*}{10in}(151mm,27.5mm){\tiny{\rotatebox{90}{\textcolor{fade}{This work is licensed under CC BY-NC-SA 4.0 \ccbyncsa}}}} \end{textblock*}
 }%
+\usepackage{hyperref}
+\newcommand\ReturnArrow[0]{%
+\begin{textblock*}{0cm}(0.5cm,0mm)\hyperlink{toc}{\includegraphics[scale=0.12]{templates/returnarrow}} \end{textblock*}
+}%
+\setbeamercolor{section in toc}{fg=myfg}
+
+
 
 %This stuff is to set beamer template options
 \setbeamersize{text margin left=0.6cm,text margin right=0.6cm}
@@ -69,11 +76,8 @@
 \usepackage{array}
 \newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
 \newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
-
-%for return to contents hyperlink
-\usepackage{hyperref}
-
-
+\setbeamertemplate{itemize items}[circle]
+\setbeamercolor{item}{fg=myfg}
 
 \begin{document}
 

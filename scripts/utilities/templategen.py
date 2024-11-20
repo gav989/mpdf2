@@ -1,9 +1,51 @@
 #templategen.py
 
 
-def generatetemplate(x=2,y=2,n=1,a=100,b=100): #x = width/columns, y = rows, n = number of answers to replace on semi-answer slide a=border b=box
+def generatetemplate(x=2,y=2,n=1,showqwitha=0,a=100,b=100): #x = width/columns, y = rows, n = number of answers to replace on semi-answer slide a=border b=box
+	qframe = r"""
+
+
+\frame{%%%%%%%%%%%%%%%%%%%%%%%%Questions%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{borderbox}[left=3.5mm,right=3.5mm,top=1mm,bottom=1mm,before skip = 0.2cm,colback=white,colframe=myfg!FRAMEOPACITY!,height=9.4cm,valign=top]{tttitle} hint
+	\begin{columns}
+		QCONTENT
+	\end{columns}
+	\end{borderbox}
+	\ReturnArrow{}
+}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Questions%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	"""
+
+	sframe = r"""
+\frame{%%%%%%%%%%%%%%%%%%%%%%%%%%%%Semi%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{borderbox}[left=3.5mm,right=3.5mm,top=1mm,bottom=1mm,before skip = 0.2cm,colback=white,colframe=myfg!FRAMEOPACITY!,height=9.4cm,valign=top]{tttitle} hint
+	\begin{columns}
+		SEMICONTENT
+	\end{columns}
+	\end{borderbox}
+	\CopyrightNotice{}
+	\ReturnArrow{}
+}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Semi%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	"""
+
+	aframe = r"""
+\frame{%%%%%%%%%%%%%%%%%%%%%%%%Answers%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{borderbox}[left=3.5mm,right=3.5mm,top=1mm,bottom=1mm,before skip = 0.2cm,colback=white,colframe=myfg!FRAMEOPACITY!,height=9.4cm,valign=top]{tttitle - Answers} hint
+	\begin{columns}
+		ACONTENT
+	\end{columns}
+	\end{borderbox}
+	\CopyrightNotice{}
+	\ReturnArrow{}
+}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Answers%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+	"""
+
+
 	if x=="starter":
 		frametext = r"""
+
+
 \frame{%%%%%%%%%%%%%%%%%%%%%%%%Questions%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\begin{borderbox}[left=3.5mm,right=3.5mm,top=1mm,bottom=1mm,before skip = 0.2cm,colback=white,height=9.4cm,valign=top]{tttitle} hint
 	\begin{columns}
@@ -54,63 +96,34 @@ def generatetemplate(x=2,y=2,n=1,a=100,b=100): #x = width/columns, y = rows, n =
 	"""
 	else:
 		numberofquestions = x*y
-		if n==0:
-			frametext = r"""
-\frame{%%%%%%%%%%%%%%%%%%%%%%%%Questions%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\begin{borderbox}[left=3.5mm,right=3.5mm,top=1mm,bottom=1mm,before skip = 0.2cm,colback=white,colframe=myfg!FRAMEOPACITY!,height=9.4cm,valign=top]{tttitle} hint
-	\begin{columns}
-		QCONTENT
-	\end{columns}
-	\end{borderbox}
-}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Questions%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\frame{%%%%%%%%%%%%%%%%%%%%%%%%Answers%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\begin{borderbox}[left=3.5mm,right=3.5mm,top=1mm,bottom=1mm,before skip = 0.2cm,colback=white,colframe=myfg!FRAMEOPACITY!,height=9.4cm,valign=top]{tttitle - Answers} hint
-	\begin{columns}
-		ACONTENT
-	\end{columns}
-	\end{borderbox}
-	\CopyrightNotice{}
-}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Answers%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-	"""
+		if n=="bycolumn":
+			frametext = qframe
+			for i in range(0,x-1):
+				tempframe = sframe
+				tempframe = tempframe.replace("SEMICONTENT","SEMICONTENT" + str(i))
+				frametext += tempframe
+			frametext += aframe
+		elif n==0:
+			frametext = qframe + aframe
 		else:
-			frametext = r"""
-\frame{%%%%%%%%%%%%%%%%%%%%%%%%Questions%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\begin{borderbox}[left=3.5mm,right=3.5mm,top=1mm,bottom=1mm,before skip = 0.2cm,colback=white,colframe=myfg!FRAMEOPACITY!,height=9.4cm,valign=top]{tttitle} hint
-	\begin{columns}
-		QCONTENT
-	\end{columns}
-	\end{borderbox}
-}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Questions%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\frame{%%%%%%%%%%%%%%%%%%%%%%%%%%%%Semi%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\begin{borderbox}[left=3.5mm,right=3.5mm,top=1mm,bottom=1mm,before skip = 0.2cm,colback=white,colframe=myfg!FRAMEOPACITY!,height=9.4cm,valign=top]{tttitle} hint
-	\begin{columns}
-		SEMICONTENT
-	\end{columns}
-	\end{borderbox}
-	\CopyrightNotice{}
-}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Semi%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\frame{%%%%%%%%%%%%%%%%%%%%%%%%Answers%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\begin{borderbox}[left=3.5mm,right=3.5mm,top=1mm,bottom=1mm,before skip = 0.2cm,colback=white,colframe=myfg!FRAMEOPACITY!,height=9.4cm,valign=top]{tttitle - Answers} hint
-	\begin{columns}
-		ACONTENT
-	\end{columns}
-	\end{borderbox}
-	\CopyrightNotice{}
-}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Answers%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-	"""
+			frametext = qframe + sframe + aframe
 		if numberofquestions==1:
-			qbox = r"""\column{\textwidth} \\[-0.2cm] q1 
+			qbox = r"""\\[-0.2cm] \raggedright q1 
 		"""
-			abox = r"""\column{\textwidth} \\[-0.2cm] \textcolor{myred}{a1 }
+			if showqwitha==0:
+				abox = r"""\\[-0.2cm] \textcolor{myred}{a1 }
+		"""
+			else:
+				abox = r"""\\[-0.2cm] q1 \\ \textcolor{myred}{a1 }
 		"""
 		else:
 			qbox = r"""\begin{questionbox}[left=3mm,right=0mm,top=0mm,bottom=0mm,before skip = 0.05cm,colframe=myfg!BOXOPACITY!]{QNUM}{QTEXT }\end{questionbox}
 		"""
-			abox = r"""\begin{questionbox}[left=3mm,right=0mm,top=0mm,bottom=0mm,before skip = 0.05cm,colframe=myfg!BOXOPACITY!]{QNUM}{\textcolor{myred}{ATEXT }}\end{questionbox}
+			if showqwitha==0:
+				abox = r"""\begin{questionbox}[left=3mm,right=0mm,top=0mm,bottom=0mm,before skip = 0.05cm,colframe=myfg!BOXOPACITY!]{QNUM}{\textcolor{myred}{ATEXT }}\end{questionbox}
+		"""
+			else:
+				abox = r"""\begin{questionbox}[left=3mm,right=0mm,top=0mm,bottom=0mm,before skip = 0.05cm,colframe=myfg!BOXOPACITY!]{QNUM}{QTEXT \hfill \textcolor{myred}{ATEXT }}\end{questionbox}
 		"""
 		coltext = r"""\column{COLWIDTH\textwidth}
 		"""
@@ -120,6 +133,8 @@ def generatetemplate(x=2,y=2,n=1,a=100,b=100): #x = width/columns, y = rows, n =
 			colwidth = "0.5085"
 		elif x==3:
 			colwidth = "0.33"
+		elif x==4:
+			colwidth = "0.235"
 		coltext = coltext.replace("COLWIDTH",colwidth)
 		frametext = frametext.replace("FRAMEOPACITY",str(a))
 		qbox = qbox.replace("BOXOPACITY",str(b))
@@ -132,18 +147,28 @@ def generatetemplate(x=2,y=2,n=1,a=100,b=100): #x = width/columns, y = rows, n =
 			alist.append(coltext)
 			for j in range(0,y):
 				qlist.append(qbox.replace("QNUM",str(qnumcounter)).replace("QTEXT","q" + str(qnumcounter)))
-				alist.append(abox.replace("QNUM",str(qnumcounter)).replace("ATEXT","a" + str(qnumcounter)))
+				alist.append(abox.replace("QNUM",str(qnumcounter)).replace("QTEXT","q" + str(qnumcounter)).replace("ATEXT","a" + str(qnumcounter)))
 				qnumcounter += 1
-		semilist = qlist.copy()
-		for i in range(0,n):
-			semilist[i] = alist[i]
 		qcontent = ""
 		acontent = ""
 		semicontent = ""
+		semilist = qlist.copy()
+		if n=="bycolumn":
+			for i in range(0,x-1):
+				for j in range(0,y*(i+1)+1+i):    #again, not sure why +1
+					semilist[j] = alist[j]
+				for j in range(0,len(qlist)):
+					semicontent = semicontent + semilist[j]
+				frametext = frametext.replace("SEMICONTENT" + str(i),semicontent)
+				semicontent = ""
+		else:
+			for i in range(0,n+1):  #not sure why it has to be +1 to work
+				semilist[i] = alist[i]
 		for i in range(0,len(qlist)):
 			qcontent = qcontent + qlist[i]
 			acontent = acontent + alist[i]
-			semicontent = semicontent + semilist[i]
+			if n!="bycolumn":
+				semicontent = semicontent + semilist[i]
 		frametext = frametext.replace("QCONTENT",qcontent).replace("ACONTENT",acontent).replace("SEMICONTENT",semicontent)
 	return frametext
 
@@ -154,16 +179,16 @@ def generatetemplate(x=2,y=2,n=1,a=100,b=100): #x = width/columns, y = rows, n =
 
 def generatetitlepage(section,description,examples):
 	frametext = r"""\section{seccction}
-\frame{%%%%%%%%%%%%%%%%%%%%%%%%Questions%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{%%%%%%%%%%%%%%%%%%%%%%%%TitlePage%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\ReturnArrow{}
 	\centering
 	\begin{Huge}seccction\end{Huge}\\[5mm]
 	\begin{Large}description\end{Large}\\[5mm]
 	examples
 	\vfill
 	\raggedright
-	\hyperlink{toc}{Return to Contents}
 	\CopyrightNotice{}
-}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Answers%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+}
 
 
 	"""
@@ -174,14 +199,14 @@ def generatetitlepage(section,description,examples):
 
 def generatecontentspage(title):
 	frametext = r"""
-\frame{%%%%%%%%%%%%%%%%%%%%%%%%Questions%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{%%%%%%%%%%%%%%%%%%%%%%%%ContentsPage%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\centering
 	\begin{Huge}tittle\end{Huge}\\[5mm]
 	\raggedright
 	\addtocontents{toc}{\protect\hypertarget{toc}{}}
 	\tableofcontents
 	\CopyrightNotice{}
-}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Answers%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+}
 
 
 	"""
