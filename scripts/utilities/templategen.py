@@ -199,7 +199,7 @@ def generatetitlepage(section,description,examples):
 
 def generatecontentspage(title):
 	frametext = r"""
-\frame{%%%%%%%%%%%%%%%%%%%%%%%%ContentsPage%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame[allowframebreaks]{%%%%%%%%%%%%%%%%%%%%%%%%ContentsPage%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\centering
 	\begin{Huge}tittle\end{Huge}\\[5mm]
 	\raggedright

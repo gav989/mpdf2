@@ -192,32 +192,6 @@ def fullsubtraction(n,explanationn):
 		returnlist.append(answer)
 	return(returnlist)
 
-
-def fullsubtraction(n,explanationn):
-	returnlist = []
-	for x in range(0, n):
-##################################
-		if explanationn==1:
-			explanation = "Calculate "
-		else:
-			explanation = ""
-		selection = (2,3,3,4,4)
-		c = random.choice(selection)
-		d = random.choice(selection)
-		a = random.randrange(10**(c-1),10**c)
-		b = random.randrange(10**(d-1),10**d)
-		if a<b:
-			c = a
-			a = b
-			b = c
-		question = explanation + str(a) + " - " + str(b)
-		answer = str(a-b)
-##################################
-		returnlist.append(question)
-		returnlist.append(answer)
-	return(returnlist)
-
-
 def decimalsubtraction(n,explanationn):
 	returnlist = []
 	for x in range(0, n):
